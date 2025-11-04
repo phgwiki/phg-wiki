@@ -6,7 +6,7 @@ title: Chapter 1 — The Nature of the Organism
 
 # Chapter 1 — The Nature of the Organism
 
-> Вставь сюда перевод главы 1 и комментарии.
+> Новый текст!.
 
 ## Commentary
 - Пример примечания к термину *organismic*.
