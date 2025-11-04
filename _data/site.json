@@ -1,0 +1,36 @@
+{
+  "title": "The PHG Translation and Commentary Project",
+  "tagline": "research and educational use only",
+  "nav": [
+    {
+      "href": "/",
+      "label": "Home"
+    },
+    {
+      "href": "/intro1/",
+      "label": "Introduction I"
+    },
+    {
+      "href": "/intro2/",
+      "label": "Introduction II"
+    },
+    {
+      "href": "/ch1/",
+      "label": "Chapter 1"
+    },
+    {
+      "href": "/ch9/",
+      "label": "Chapter 9"
+    },
+    {
+      "href": "/glossary/",
+      "label": "Glossary"
+    },
+    {
+      "href": "/about/",
+      "label": "About GTTL"
+    }
+  ],
+  "disclaimer_en": "This translation is made and published for research and educational purposes only within the GTTL community. It is not an official or commercial publication of Gestalt Therapy (1951). Original text © The Gestalt Journal Press, 1994. Russian translation © GTTL Translators, 2025.",
+  "disclaimer_ru": "Настоящий перевод подготовлен и опубликован исключительно в исследовательских и образовательных целях в рамках сообщества GTTL. Это неофициальное и некоммерческое издание книги «Гештальт‑терапия. Возбуждение и рост человеческой личности» (1951). Оригинальный текст © The Gestalt Journal Press, 1994."
+}

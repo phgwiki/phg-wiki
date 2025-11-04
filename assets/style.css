@@ -1,0 +1,13 @@
+:root { --max: 860px; }
+body { font-family: system-ui, -apple-system, Arial, sans-serif; line-height: 1.6; margin: 0; }
+.container { max-width: var(--max); margin: 0 auto; padding: 1.2rem; }
+header h1 { margin: 0 0 .25rem 0; font-size: 1.6rem; }
+header .tagline { color: #666; margin: .2rem 0 1rem 0; }
+.nav a { margin-right: .8rem; text-decoration: none; color: #0a58ca; }
+.nav a:hover { text-decoration: underline; }
+.content h1 { margin-top: 0; }
+.content blockquote { border-left: 3px solid #ddd; margin: 1rem 0; padding: .5rem 1rem; color: #333; background: #fafafa; }
+.footer { color: #777; font-size: .9rem; }
+.disclaimer { font-size: .9rem; color: #444; background: #fff8e6; padding: .8rem; border: 1px solid #f2e2b9; border-radius: 6px; }
+code { background: #f6f8fa; padding: .1rem .3rem; border-radius: 4px; }
+hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
