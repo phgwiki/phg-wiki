@@ -4,8 +4,8 @@ module.exports = function(eleventyConfig) {
   return {
     dir: {
       input: "src",
-      includes: "_includes",
-      data: "_data",
+      includes: "../_includes",  // 👈 важно: ищем уровень выше
+      data: "../_data",          // 👈 и данные тоже
       output: "_site"
     },
     markdownTemplateEngine: "njk",
