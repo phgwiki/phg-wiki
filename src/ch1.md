@@ -4,20 +4,11 @@ title: Chapter 1 — The Nature of the Organism
 ---
 
 
-# Chapter 1 — The Nature of the Organism
-
- <div class="parallel-block">
-  <div class="parallel-controls">
-    <button class="parallel-toggle" data-parallel-toggle>
-      Скрыть оригинал ×
-    </button>
-  </div>
-  <div class="parallel-columns">
-    <div class="col col-ru">
- <h1>Том I</h1>
-<h2>Глава 1. Структура роста</h2>
-
-### 1: Контактная граница
+# Том I, Глава 1. Структура роста
+ <div class="parallel-block"><div class="parallel-controls"><button class="parallel-toggle" data-parallel-toggle>Скрыть оригинал ×</button></div>
+  <div class="parallel-columns"><div class="col col-ru" markdown="1">
+ 
+ ###   1: Контактная граница
 Опыт возникает на границе между организмом и его средой, прежде всего на поверхности кожи и в других органах сенсорного и моторного реагирования. Опыт – функция этой границы, и, с психологической точки зрения, реальны "целостные" конфигурации этого функционирования, некий обретенный смысл, завершенное действие. Целостности опыта включают в себя не все, но представляют собой четкие единые структуры. Психологически все остальное, включая даже сами понятия “организма” или “среды”, — это абстракции, или возможные конструкции, или потенциальности, возникающие в этом опыте как указания на какой-то другой опыт. Мы говорим о контактировании организма со средой, но именно этот контакт и есть самая простая и первичная реальность. Вы сразу почувствуете это, если вместо того, чтобы просто смотреть на объекты перед собой, вы также начнете осознавать, что они заключены в овал вашего поля зрения, и если ощутите, как это овальное поле зрения, скажем так, вплотную прилегает к глазам – фактически, это и будет видением ваших глаз. Обратите внимание, как в этом овальном поле объекты приобретают эстетические отношения, связанные с пространством и цветом. То же самое можно испытать со звуками "снаружи": их корень реальности находится на границе контакта, и на этой границе они воспринимаются как единые конструкции. Так и в моторном плане, если вы осознаете процесс броска мяча, цель словно приближается, а импульс вашего движения, так сказать, устремляется наружу, чтобы встретиться с ней. Итак, задача всех практических экспериментов и теоретических дискуссий в этой книге – проанализировать функцию контактирования и повысить уровень осознавания реальности.
 Мы используем слово "контакт" – быть "в соприкосновении с" объектами – для описания основы и сенсорного осознавания, и моторной деятельности. Вероятно, существуют примитивные организмы, для которых осознавание и двигательная реакция представляют собой один и тот же акт. В организмах более высокого уровня, во время хорошего контакта, всегда можно наблюдать сотрудничество ощущений и движений (и чувств).
 
@@ -68,16 +59,12 @@ title: Chapter 1 — The Nature of the Organism
 
   Описание психологического здоровья и болезни очень простое. Оно касается того, с чем селф идентифицируется, а что отчуждает: если человек отождествляет себя со своим формирующимся селф, не подавляет свое творческое возбуждение и движение к будущему решению, а также если он отчуждает то, что не подходит его организму и потому не может быть жизненно важным, а только разрушает фигуру/фон, то он психологически здоров, поскольку использует свои лучшие способности и сделает все возможное в сложных жизненных обстоятельствах. Напротив, если он отчуждает себя и из-за ложных идентификаций пытается подчинить свою спонтанность, то делает свою жизнь скучной, запутанной и мучительной. Систему идентификаций и отчуждений мы будем называть «эго».
 
-  С этой точки зрения наш метод терапии заключается в следующем: тренировать эго, различные идентификации и отчуждения в экспериментах по намеренному осознанному восприятию разных своих функций, пока спонтанно не возродится чувство «именно я думаю, воспринимаю, чувствую и делаю это». С этого момента пациент способен справляться сам.**
+  С этой точки зрения наш метод терапии заключается в следующем: тренировать эго, различные идентификации и отчуждения в экспериментах по намеренному осознанному восприятию разных своих функций, пока спонтанно не возродится чувство «именно я думаю, воспринимаю, чувствую и делаю это». С этого момента пациент способен справляться сам.</p>
 </div>
-    <div class="col col-en">
-<h1>VOLUME I</h1>
-<h2>CHAPTER I THE STRUCTURE OF GROWTH </h2>
-
-	1: The Contact-Boundary
+    <div class="col col-en" markdown="1">
+### 1: The Contact-Boundary
 Experience occurs at the boundary between the organism and its environment, primarily the skin surface and the other organs of sensory and motor response. Experience is the function of this boundary, and psychologically what is real are the “whole” configurations of this functioning, some meaning being achieved, some action completed. The wholes of experience do not include everything, but they are definite unified structures; and psychologically everything else, including the very notions of an organism or an environment, is an abstraction or a possible construction or a potentiality occurring in this experience as a hint of some other experience. We speak of the organism contacting the environment, but it is the contact that is the simplest and first reality. You may feel this at once if, instead of merely looking at the objects before you, you also become aware of the fact that they are objects in your oval field of vision, and if you feel how this oval of vision is, so to speak, close up against your eyes — indeed, it is the seeing of your eyes. Notice, then, how in this oval field the objects begin to have aesthetic relations, of space and color-value. And so you may experience it with the sounds “out there”: their root of reality is at the boundary of contact, and at that boundary they are experienced in unified structures. And so motorically, if you are aware of throwing a ball, the distance comes close and your motor impulse has, so to speak, rushed to the surface to meet it. Now the purpose of all the practical experiments and theoretical discussions in this book is to analyze the function of contacting and to heighten awareness of reality.
 We use the word “contact” — “in touch with” objects — as underlying both sensory awareness and motor behavior. Presumably there are primitive organisms in which awareness and motoric response are the same act; and in organisms of higher grade, where there is good contact, one can always show the cooperation of sense and movement (and also feeling).
-
 ### 2: Interaction of Organism and Environment
 Now in any biological, psychological or sociological investigation whatever, we must start from the interacting of the organism and its environment. It makes no sense to speak, for instance, of an animal that breathes without considering air and oxygen as part of its definition, or to speak of eating without mentioning food, or of seeing without light, or locomotion without gravity and supporting ground, or of speech without communicants. There is no single function of any animal that completes itself without objects and environment, whether one thinks of vegetative functions like nourishment and sexuality, or perceptual functions, or motor functions, or feeling, or reasoning. The meaning of anger involves a frustrating obstacle; the meaning of reasoning involves problems of practice. Let us call this interacting of organism and environment in any function the “organism/environment field”; and let us remember that no matter how we theorize about impulses, drives, etc., it is always to such an interacting field that we are referring, and not to an isolated animal. Where the organism is mobile in a great field and has a complicated internal structure, like an animal, it seems plausible to speak of it by itself — as, for instance, the skin and what is contained in it — but this is simply an illusion due to the fact that the motion through space and the internal detail call attention to themselves against the relative stability and simplicity of the background.
 
@@ -137,9 +124,8 @@ Contact, figure/background formation, is a mounting excitement, feelingful and c
 
   [1] Imitating Aristotle, modern psychologists (especially of the nineteenth century) start with the mere physics of the objects of perception, and then switch to the biology of the organs, etc. But they lack Aristotle’s saving and accurate insight that “in act,” in sensing, the object and the organ are identical.**
     </div>
-  
   </div>
-</div>Новый текст!.
+</div>
 
 ## Commentary
 - Пример примечания к термину *organismic*.
