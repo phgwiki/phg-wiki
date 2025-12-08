@@ -11,3 +11,48 @@ header .tagline { color: #666; margin: .2rem 0 1rem 0; }
 .disclaimer { font-size: .9rem; color: #444; background: #fff8e6; padding: .8rem; border: 1px solid #f2e2b9; border-radius: 6px; }
 code { background: #f6f8fa; padding: .1rem .3rem; border-radius: 4px; }
 hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
+/* Параллельный текст: две колонки */
+.parallel-block {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 0.75rem 0.75rem 1rem;
+  margin: 1.5rem 0;
+  background: #fafafa;
+}
+
+.parallel-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+.parallel-toggle {
+  font-size: 0.85rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #777;
+}
+
+.parallel-toggle:hover {
+  color: #333;
+}
+
+.parallel-columns {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.parallel-columns .col {
+  width: 50%;
+  min-width: 0;
+}
+
+/* Когда оригинал скрыт */
+.parallel-block.parallel-closed .col-en {
+  display: none;
+}
+
+.parallel-block.parallel-closed .col-ru {
+  width: 100%;
+}

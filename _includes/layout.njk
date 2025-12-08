@@ -46,5 +46,20 @@
       <p>© GTTL Translators, 2025 · Research & Educational Use Only</p>
     </footer>
 <script async src="https://hypothes.is/embed.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const blocks = document.querySelectorAll(".parallel-block");
+
+    blocks.forEach(function (block) {
+      const btn = block.querySelector("[data-parallel-toggle]");
+      if (!btn) return;
+
+      btn.addEventListener("click", function () {
+        const closed = block.classList.toggle("parallel-closed");
+        btn.textContent = closed ? "Показать оригинал" : "Скрыть оригинал ×";
+      });
+    });
+  });
+</script>
   </body>
 </html>
