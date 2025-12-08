@@ -44,11 +44,11 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
 }
 
 .parallel-columns .col-ru {
-  width: 52%;
+  width: 53%;
   min-width: 0;
 }
 .parallel-columns .col-en {
-  width: 48%;
+  width: 47%;
   min-width: 0;
 }
 
