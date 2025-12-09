@@ -11,6 +11,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.setLibrary("md", mdLib);
 
   // ВАЖНО: сказать Eleventy, где лежит контент и инклюды
+  eleventyConfig.addPassthroughCopy("assets");
   return {
     dir: {
       input: "src",        // твой контент: ch1.md, intro1.md и т.п.
