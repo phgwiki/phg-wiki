@@ -1,15 +1,9 @@
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("assets");
+const markdownIt = require("markdown-it");
+const markdownItFootnote = require("markdown-it-footnote");
 
-  return {
-    dir: {
-      input: "src",
-      includes: "../_includes",  // 👈 важно: ищем уровень выше
-      data: "../_data",          // 👈 и данные тоже
-      output: "_site"
-    },
-    markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
-    templateFormats: ["md", "njk", "html"]
-  };
+module.exports = function(eleventyConfig) {
+  const mdLib = markdownIt({ html: true, linkify: true })
+    .use(markdownItFootnote);
+
+  eleventyConfig.setLibrary("md", mdLib);
 };
