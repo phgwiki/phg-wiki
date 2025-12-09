@@ -15,7 +15,7 @@
               "state": {
                 "file": "src/ch1.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "ch1"
