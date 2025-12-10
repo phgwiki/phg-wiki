@@ -1,8 +1,8 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Jost:wght@400;500;600;700&subset=latin,cyrillic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Jost:wght@400;500;600&display=swap');
 
 :root { --max: 860px; }
-body { font-family: system-ui, -apple-system, Arial, sans-serif; line-height: 1.6; margin: 0; }
+
 .container { max-width: var(--max); margin: 0 auto; padding: 1.2rem; }
 header h1 { margin: 0 0 .25rem 0; font-size: 1.6rem; }
 header .tagline { color: #666; margin: .2rem 0 1rem 0; }
@@ -24,7 +24,7 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
 .parallel-block {
   border: 1px solid #eee;
   border-radius: 8px;
-  padding: 0.75rem 0.75rem 1rem;
+  padding: 0.75rem;
   margin: 1.5rem 0;
   background: #fafafa;
 }
@@ -78,7 +78,7 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
 }
 /* Основной текст: спокойный книжный стиль */
 .col-ru, .col-ru p, body {
-    font-family: 'Inter', system-ui, sans-serif !important;
+    font-family: 'Jost', system-ui, sans-serif !important;
     font-weight: 400 !important;
     font-size: 16px;
     line-height: 1.75;
