@@ -2,7 +2,7 @@
 layout: layout.njk
 title: Том I, Глава 1. Структура роста
 ---
-# Том I, Глава 1. Структура роста
+# Том I // Глава 1. Структура роста
  <div class="parallel-block"><div class="parallel-controls"><button class="parallel-toggle" data-parallel-toggle>Скрыть оригинал ×</button></div>
  <div class="parallel-columns">
  
@@ -92,9 +92,11 @@ title: Том I, Глава 1. Структура роста
 
  	С этой точки зрения наш метод терапии заключается в следующем: тренировать эго, различные идентификации и отчуждения в экспериментах по намеренному осознанному восприятию разных своих функций, пока спонтанно не возродится чувство «именно я думаю, воспринимаю, чувствую и делаю это». С этого момента пациент способен справляться сам. 
 
-[^1]:	В оригинале *experience* как субъективно переживаемые впечатления от контакта с реальностью, сенсорный опыт, переживание, субъективное восприятие событий. - Прим. пер.
+[^1]:	В оригинале "experience" как субъективно переживаемые впечатления от контакта с реальностью, сенсорный опыт, переживание, субъективное восприятие событий. — Примеч. пер.
 
 [^2]:	[1] Подражая Аристотелю, современные психологи (особенно XIX века) начинают с простой физики объектов восприятия, а затем переходят к биологии органов и т. д. Но им недостает спасительного и точного понимания Аристотеля, что “в действии”, в ощущении, объект и орган идентичны.
+
+[1]Imitating Aristotle, modern psychologists (especially of the nineteenth century) start with the mere physics of the objects of perception, and then switch to the biology of the organs, etc. But they lack Aristotle’s saving and accurate insight that “in act,” in sensing, the object and the organ are identical.
 </div>
 
     <div class="col col-en" markdown="1">
@@ -180,11 +182,6 @@ We must contrast this conception of the self with the otiose “consciousness”
 The description of psychological health and disease is a simple one. It is a matter of the identifications and alienations of the self: If a man identifies with his forming self, does not inhibit his own creative excitement and reaching toward the coming solution; and conversely, if he alienates what is not organically his own and therefore cannot be vitally interesting, but rather disrupts the figure/background, then he is psychologically healthy, for he is exercising his best power and will do the best he can in the difficult circumstances of the world. But on the contrary, if he alienates himself and because of false identifications tries to conquer his own spontaneity, then he creates his life dull, confused, and painful. The system of identifications and alienations we shall call the “ego.”  
 
 From this point of view, our method of therapy is as follows: to train the ego, the various identifications and alienations, by experiments of deliberate awareness of one’s various functions, until the sense is spontaneously revived that “it is I who am thinking, perceiving, feeling, and doing this.” At this point the patient can take over on his own.  
-
-[^3][1]Imitating Aristotle, modern psychologists (especially of the nineteenth century) start with the mere physics of the objects of perception, and then switch to the biology of the organs, etc. But they lack Aristotle’s saving and accurate insight that “in act,” in sensing, the object and the organ are identical.
     </div>
   </div>
 </div>
-
-## Commentary
-- Пример примечания к термину *organismic*.
