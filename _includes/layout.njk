@@ -13,11 +13,42 @@
     <header class="container">
       <h1><a href="/">{{ site.title }}</a></h1>
       <p class="tagline">{{ site.tagline }}</p>
-      <nav class="nav">
-        {% for item in site.nav %}
+      
+      <div class="chapters-menu">
+  <div class="chapter-block">
+    <h3>Том I</h3>
+    <ul>
+      <li><a href="/intro1">Введение I</a></li>
+      <li><a href="/intro2">Введение II</a></li>
+      <li><a href="/ch1">Глава 1</a></li>
+      <li><a href="/ch9">Глава 9</a></li>
+      <!-- добавляй другие главы -->
+    </ul>
+  </div>
+
+  <div class="chapter-block">
+    <h3>Том II</h3>
+    <ul>
+      <li><a href="/t2ch1">Глава 1</a></li>
+      <li><a href="/t2ch2">Глава 2</a></li>
+      <li><a href="/t2ch3">Глава 3</a></li>
+      <!-- и т.д. -->
+    </ul>
+  </div>
+
+  <div class="chapter-block">
+    <h3>Материалы</h3>
+    <ul>
+      <li><a href="/glossary">Глоссарий</a></li>
+      <li><a href="/about">О проекте</a></li>
+      <li><a href="/gttl">GTTL</a></li>
+    </ul>
+  </div>
+</div>
+        <!-- <nav class="nav"> {% for item in site.nav %}
           <a href="{{ item.href }}">{{ item.label }}</a>
-        {% endfor %}
-      </nav>
+        {% endfor %} </nav> old menu--> 
+      
     </header>
     <main class="container content">
       {{ content | safe }}
