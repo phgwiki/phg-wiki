@@ -60,36 +60,38 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
 .parallel-block.parallel-closed .col-ru {
   width: 100%;
 }
+/* Основной текст: спокойный книжный стиль */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-               Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.65;
-  color: #222;
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #111;
   background: #fff;
-  max-width: 900px;        /* чтобы текст не растягивался во всю ширину */
+  max-width: 780px;        /* чуть уже колонка, как на скрине */
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 5rem 2rem 3rem; /* большой верхний отступ и комфортные поля */
 }
 
-/* Межстрочный интервал для параграфов */
+/* Абзацы: без огромных промежутков, с красной строкой */
 p {
-  margin: 1.2em 0;
+  margin: 0 0 1.1em 0;
+  text-indent: 1.8em; /* первая строка с отступом, как в книге */
 }
 
-/* Улучшаем читаемость заголовков */
+/* Заголовки — жирные, но без слишком больших отступов */
 h1, h2, h3, h4 {
+  font-family: "Georgia", "Times New Roman", serif;
   font-weight: 700;
   line-height: 1.3;
-  margin-top: 2em;
+  margin-top: 2.5em;
   margin-bottom: 0.5em;
 }
 
 /* Размеры заголовков */
-h1 { font-family: Oswald; font-size: 2.2rem; }
-h2 { font-family: Oswald; font-size: 1.9rem; }
-h3 { font-family: Oswald; font-size: 1.6rem; }
-h4 { font-family: Oswald; font-size: 1.3rem; }
+h1 { font-size: 2.3rem; }
+h2 { font-size: 2.0rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.3rem; }
 
 /* Сноски — чтобы выглядели аккуратно */
 sup {
