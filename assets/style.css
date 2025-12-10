@@ -1,3 +1,6 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Jost:wght@400;500;600&display=swap');
+
 :root { --max: 860px; }
 body { font-family: system-ui, -apple-system, Arial, sans-serif; line-height: 1.6; margin: 0; }
 .container { max-width: var(--max); margin: 0 auto; padding: 1.2rem; }
