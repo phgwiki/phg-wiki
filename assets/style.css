@@ -49,16 +49,18 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
 
 .parallel-columns {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .parallel-columns .col-ru {
   width: 54%;
   min-width: 0;
+  justify-content: stretch;
 }
 .parallel-columns .col-en {
   width: 46%;
   min-width: 0;
+  justify-content: stretch;
 }
 .col-en, .col-en p {
     font-family: 'Jost', sans-serif !important;

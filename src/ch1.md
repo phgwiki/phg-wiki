@@ -95,8 +95,6 @@ title: Том I, Глава 1. Структура роста
 [^1]:	В оригинале "experience" как субъективно переживаемые впечатления от контакта с реальностью, сенсорный опыт, переживание, субъективное восприятие событий. — Примеч. пер.
 
 [^2]:	[1] Подражая Аристотелю, современные психологи (особенно XIX века) начинают с простой физики объектов восприятия, а затем переходят к биологии органов и т. д. Но им недостает спасительного и точного понимания Аристотеля, что “в действии”, в ощущении, объект и орган идентичны. 
-
-[^2:1] [1] Imitating Aristotle, modern psychologists (especially of the nineteenth century) start with the mere physics of the objects of perception, and then switch to the biology of the organs, etc. But they lack Aristotle’s saving and accurate insight that “in act,” in sensing, the object and the organ are identical.
 </div>
 
     <div class="col col-en" markdown="1">
