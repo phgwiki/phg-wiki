@@ -134,3 +134,64 @@ a:hover {
 .parallel-columns {
   gap: 2rem;
 }
+
+/* ГОРИЗОНТАЛЬНОЕ МЕНЮ */
+.chapters-horizontal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.chapters-horizontal .menu-group {
+    position: relative;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+.chapters-horizontal .menu-group > span {
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #333;
+}
+
+.chapters-horizontal .menu-group:hover > span {
+    color: black;
+}
+
+/* ВЫПАДАЮЩИЕ ПОДМЕНЮ */
+.chapters-horizontal .submenu {
+    position: absolute;
+    top: 2.2rem;
+    left: 0;
+    background: white;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
+    display: none;
+    min-width: 180px;
+}
+
+.chapters-horizontal .menu-group:hover .submenu {
+    display: block;
+}
+
+.chapters-horizontal .submenu li {
+    margin: 0.4rem 0;
+}
+
+.chapters-horizontal .submenu a {
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 1.05rem;
+    color: #444;
+    transition: color 0.2s;
+}
+
+.chapters-horizontal .submenu a:hover {
+    color: black;
+}

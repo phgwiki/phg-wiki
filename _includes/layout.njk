@@ -14,37 +14,37 @@
       <h1><a href="/">{{ site.title }}</a></h1>
       <p class="tagline">{{ site.tagline }}</p>
       
-      <div class="chapters-menu">
-  <div class="chapter-block">
-    <h3>Том I</h3>
-    <ul>
-      <li><a href="/intro1">Введение I</a></li>
-      <li><a href="/intro2">Введение II</a></li>
-      <li><a href="/ch1">Глава 1</a></li>
-      <li><a href="/ch9">Глава 9</a></li>
-      <!-- добавляй другие главы -->
-    </ul>
-  </div>
+      <nav class="chapters-horizontal">
+  <ul>
+    <li class="menu-group">
+      <span>Том I</span>
+      <ul class="submenu">
+        <li><a href="/intro1">Введение I</a></li>
+        <li><a href="/intro2">Введение II</a></li>
+        <li><a href="/ch1">Глава 1</a></li>
+        <li><a href="/ch9">Глава 9</a></li>
+      </ul>
+    </li>
 
-  <div class="chapter-block">
-    <h3>Том II</h3>
-    <ul>
-      <li><a href="/t2ch1">Глава 1</a></li>
-      <li><a href="/t2ch2">Глава 2</a></li>
-      <li><a href="/t2ch3">Глава 3</a></li>
-      <!-- и т.д. -->
-    </ul>
-  </div>
+    <li class="menu-group">
+      <span>Том II</span>
+      <ul class="submenu">
+        <li><a href="/t2ch1">Глава 1</a></li>
+        <li><a href="/t2ch2">Глава 2</a></li>
+        <li><a href="/t2ch3">Глава 3</a></li>
+      </ul>
+    </li>
 
-  <div class="chapter-block">
-    <h3>Материалы</h3>
-    <ul>
-      <li><a href="/glossary">Глоссарий</a></li>
-      <li><a href="/about">О проекте</a></li>
-      <li><a href="/gttl">GTTL</a></li>
-    </ul>
-  </div>
-</div>
+    <li class="menu-group">
+      <span>Материалы</span>
+      <ul class="submenu">
+        <li><a href="/glossary">Глоссарий</a></li>
+        <li><a href="/about">О проекте</a></li>
+        <li><a href="/gttl">GTTL</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
         <!-- <nav class="nav"> {% for item in site.nav %}
           <a href="{{ item.href }}">{{ item.label }}</a>
         {% endfor %} </nav> old menu--> 
