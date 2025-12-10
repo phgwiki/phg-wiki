@@ -54,6 +54,15 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
   width: 46%;
   min-width: 0;
 }
+.col-en {
+  font-family: 'Jost', 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.col-en p {
+  font-weight: 500;
+  text-indent: 1.2em; /* чуть поменьше красная строка — можно подравнять под вкус */
+}
 
 /* Когда оригинал скрыт */
 .parallel-block.parallel-closed .col-en {
@@ -65,7 +74,8 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
 }
 /* Основной текст: спокойный книжный стиль */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.75;
   color: #111;
@@ -91,9 +101,9 @@ h1, h2, h3, h4 {
 }
 
 /* Рекомендованные размеры */
-h1 { font-size: 1.8rem; font-weight: 600; }
-h2 { font-size: 1.2rem; }
-h3 { font-size: 1rem; }
+h1 { font-size: 2rem; font-weight: 600; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.3rem; }
 h4 { font-size: 0.8rem; }
 
 /* Сноски — чтобы выглядели аккуратно */
