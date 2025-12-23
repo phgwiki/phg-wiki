@@ -1,6 +1,9 @@
 ---
 layout: layout.njk
 title: Том I, Глава II
+order: 102
+volume: 1
+type: chapter
 ---
 # Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth
 ## Часть 1 Введение /  Part 1 Introduction

@@ -1,6 +1,9 @@
 ---
 layout: layout.njk
 title: Том I, Глава 9
+order: 109
+volume: 1
+type: chapter
 ---
 # Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth
 ## Часть 2: Реальность, человеческая природа и общество/ Part 2: Reality, Human Nature, and Society

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/t1ch3.md",
+                "file": "src/v1ch8.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "t1ch3"
+              "title": "v1ch8"
             }
           }
         ]
@@ -171,15 +171,21 @@
   },
   "active": "0b1a6fc1633808ef",
   "lastOpenFiles": [
-    "src/t1ch2.md",
-    "src/t1ch4.md",
-    "src/t1ch9.md",
-    "src/t1ch8.md",
-    "src/t1ch7.md",
-    "src/t1ch6.md",
-    "src/t1ch5.md",
-    "src/t1ch3.md",
-    "src/t1ch1.md",
+    "src/v1ch7.md",
+    "src/v1ch8.md",
+    "src/v1ch9.md",
+    "src/v1ch10.md",
+    "src/v1ch11.md",
+    "src/v1ch12.md",
+    "src/v1ch13.md",
+    "src/v1ch14.md",
+    "src/v1ch15.md",
+    "src/v1ch1.md",
+    "src/v1ch6.md",
+    "src/v1ch5.md",
+    "src/v1ch4.md",
+    "src/v1ch3.md",
+    "src/v1ch2.md",
     "src/intro1.md",
     "eleventy.js",
     "eleventy.js..json",
