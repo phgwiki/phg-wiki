@@ -21,11 +21,11 @@ module.exports = function(eleventyConfig) {
 
   // ✅ Коллекция глав: берём только type: chapter и сортируем по order
   eleventyConfig.addCollection("chapters", function(collectionApi) {
-    return collectionApi
-      .getFilteredByGlob("src/**/*.md")
-      .filter(item => item.data && item.data.type === "chapter")
-      .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
-  });
+  return collectionApi
+    .getFilteredByGlob("**/*.md")   // <-- ВАЖНО (а не "src/**/*.md")
+    .filter(item => item.data && item.data.type === "chapter")
+    .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
+});
 
   return {
     dir: {
