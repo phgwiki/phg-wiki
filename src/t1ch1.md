@@ -2,9 +2,9 @@
 layout: layout.njk
 title: Том I, Глава I. Структура роста
 ---
-# Том I 
-## Часть 1 / 
-### Глава I. Структура роста / 
+# Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth
+## Часть 1 Введение /  Part 1 Introduction
+### Глава I. Структура роста / Chapter I The Structure of Growth
  <div class="parallel-block"><div class="parallel-controls"><button class="parallel-toggle" data-parallel-toggle>Скрыть оригинал ×</button></div>
  <div class="parallel-columns">
  

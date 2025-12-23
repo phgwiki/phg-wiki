@@ -2,7 +2,7 @@
 layout: layout.njk
 title: Том I, Глава III
 ---
-# Том I 
+# Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth
 ## Часть 2: Реальность, человеческая природа и общество/ Part 2: Reality, Human Nature, and Society
 ### Глава III «Mind», «тело» и «внешний мир»/ Chapter III “Mind,” “Body,” and “External World”
  <div class="parallel-block"><div class="parallel-controls"><button class="parallel-toggle" data-parallel-toggle>Скрыть оригинал ×</button></div>
