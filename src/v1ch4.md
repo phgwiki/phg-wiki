@@ -192,7 +192,7 @@ type: chapter
 </div>
  <div class="col col-en" markdown="1">
 
-### Chapter IV Reality, Emergency, and Evaluation
+## Chapter IV Reality, Emergency, and Evaluation
 
 Reality, we have been saying, is given in moments of “good contact,” a unity of awareness, motor response, and feeling. Let us now begin to analyze this unity more closely and relate it to our method of psychotherapy. In the present chapter we shall argue that reality and value emerge as a result of self-regulation, whether healthy or neurotic; and we shall discuss the problem of how, within the framework of the neurotic’s self-regulation, to increase the area of contact. We shall answer this by defining psychotherapy as self-regulation in experimental safe emergencies.
 
@@ -351,4 +351,6 @@ There is no use in the therapist’s ever making comparative evaluations against
 [^2] We say “fairly healthy” because the military context of the incident is itself dubious; and any actual context that one chooses will be dubious in some way.
 
 [^3] And vice versa: in our society with its neurotic isolation and need “to do it by oneself,” not to ask for help is a resistance.
+</div>
+  </div>
 </div>
