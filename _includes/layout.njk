@@ -8,10 +8,13 @@
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap&subset=cyrillic,cyrillic-ext,latin">
     <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
+    <script src="/pagefind/pagefind-ui.js"></script>
   </head>
 
   <body>
     <header class="container">
+      <div id="search" class="search"></div>
       <h1><a href="/">{{ site.title }}</a></h1>
       <p class="tagline">{{ site.tagline }}</p>
 
@@ -67,9 +70,10 @@
           </li>
         </ul>
       </nav>
+      
     </header>
 
-    <main class="container content">
+    <main class="container content" data-pagefind-body>
       {# =========================
          AUTO PREV / NEXT (ТОЛЬКО ДЛЯ ГЛАВ)
          Требует в frontmatter:
@@ -153,6 +157,17 @@
             btn.textContent = closed ? "Показать оригинал" : "Скрыть оригинал ×";
           });
         });
+      });
+    </script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        if (window.PagefindUI) {
+          new PagefindUI({
+            element: "#search",
+            showSubResults: true,
+            highlightParam: "highlight"
+          });
+        }
       });
     </script>
   </body>
