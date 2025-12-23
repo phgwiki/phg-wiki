@@ -72,7 +72,7 @@
       <div id="search" class="search"></div>
     </header>
 
-    <main class="container content">
+    <main class="container content" data-pagefind-body>
       {# =========================
          AUTO PREV / NEXT (ТОЛЬКО ДЛЯ ГЛАВ)
          Требует в frontmatter:
@@ -156,6 +156,17 @@
             btn.textContent = closed ? "Показать оригинал" : "Скрыть оригинал ×";
           });
         });
+      });
+    </script>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        if (window.PagefindUI) {
+          new PagefindUI({
+            element: "#search",
+            showSubResults: true,
+            highlightParam: "highlight"
+          });
+        }
       });
     </script>
   </body>
