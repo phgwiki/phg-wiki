@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/ch3.md",
+                "file": "src/t1ch2.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "ch3"
+              "title": "t1ch2"
             }
           }
         ]
@@ -171,16 +171,16 @@
   },
   "active": "0b1a6fc1633808ef",
   "lastOpenFiles": [
-    "src/ch2.md",
-    "src/ch1.md",
-    "src/ch5.md",
-    "src/ch4.md",
-    "src/ch3.md",
+    "src/t1ch1.md",
+    "src/t1ch2.md",
+    "src/t1ch3.md",
+    "src/t1ch4.md",
+    "src/t1ch5.md",
+    "src/t1ch6.md",
+    "src/t1ch7.md",
+    "src/t1ch8.md",
+    "src/t1ch9.md",
     "src/intro1.md",
-    "src/ch9.md",
-    "src/ch8.md",
-    "src/ch7.md",
-    "src/ch6.md",
     "eleventy.js",
     "eleventy.js..json",
     "package copy.json",

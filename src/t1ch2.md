@@ -1,9 +1,10 @@
 ---
 layout: layout.njk
-title: Том I, Глава 2
+title: Том I, Глава II
 ---
-# Том I // Глава 2. Различия во взглядах и различия в терапии
-# Chapter II Differences in general outlook and differences in therapy
+# Том I 
+## Часть 1
+### Глава II Различия во взглядах и различия в терапии / Chapter II Differences in general outlook and differences in therapy
  <div class="parallel-block"><div class="parallel-controls"><button class="parallel-toggle" data-parallel-toggle>Скрыть оригинал ×</button></div>
  <div class="parallel-columns">
  <div class="col col-ru" markdown="1">

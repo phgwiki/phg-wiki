@@ -1,8 +1,10 @@
 ---
 layout: layout.njk
-title: Том I, Глава 1. Структура роста
+title: Том I, Глава I. Структура роста
 ---
-# Том I // Глава 1. Структура роста
+# Том I 
+## Часть 1 / 
+### Глава I. Структура роста / 
  <div class="parallel-block"><div class="parallel-controls"><button class="parallel-toggle" data-parallel-toggle>Скрыть оригинал ×</button></div>
  <div class="parallel-columns">
  

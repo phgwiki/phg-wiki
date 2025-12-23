@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: Том I, Глава 3
+title: Том I, Глава III
 ---
 # Том I 
 ## Часть 2: Реальность, человеческая природа и общество/ Part 2: Reality, Human Nature, and Society
