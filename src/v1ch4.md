@@ -1,16 +1,18 @@
 ---
 layout: layout.njk
-title: Том I, Глава IV
+title: Глава IV
 order: 4
 volume: 1
 type: chapter
 ---
-# Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth
-## Часть 2: Реальность, человеческая природа и общество/ Part 2: Reality, Human Nature, and Society
-### Глава IV Реальность, чрезвычайная ситуация и оценка/ Chapter IV Reality, Emergency, and Evaluation
+Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth
+
+Часть 2: Реальность, человеческая природа и общество/ Part 2: Reality, Human Nature, and Society
  <div class="parallel-block"><div class="parallel-controls"><button class="parallel-toggle" data-parallel-toggle>Скрыть оригинал ×</button></div>
  <div class="parallel-columns">
  <div class="col col-ru" markdown="1">
+
+## Глава IV Реальность, чрезвычайная ситуация и оценка/ Chapter IV Reality, Emergency, and Evaluation
 
 Реальность, как мы уже отмечали, дается в моменты «хорошего контакта» — единства осознавания, двигательной реакции и чувства. Теперь давайте более детально разберем это единство и соотнесём его с нашим методом психотерапии. В данной главе мы приведём доводы в пользу того, что реальность и ценность возникают в результате саморегуляции как здоровой, так и невротической. Также мы рассмотрим вопрос о том, как в рамках невротической саморегуляции расширить область контакта. Ответим мы на этот вопрос, определив психотерапию как саморегуляцию в условиях чрезвычайной ситуации, одновременно экспериментальных и безопасных.
 

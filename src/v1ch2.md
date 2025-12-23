@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: Том I, Глава II
+title: Глава II
 order: 2
 volume: 1
 type: chapter

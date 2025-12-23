@@ -1,16 +1,17 @@
 ---
 layout: layout.njk
-title: Том I, Глава III
+title: Глава III
 order: 3
 volume: 1
 type: chapter
 ---
-# Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth
-## Часть 2: Реальность, человеческая природа и общество/ Part 2: Reality, Human Nature, and Society
-### Глава III «Mind», «тело» и «внешний мир»/ Chapter III “Mind,” “Body,” and “External World”
+Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth
+
+Часть 2: Реальность, человеческая природа и общество/ Part 2: Reality, Human Nature, and Society
  <div class="parallel-block"><div class="parallel-controls"><button class="parallel-toggle" data-parallel-toggle>Скрыть оригинал ×</button></div>
  <div class="parallel-columns">
  <div class="col col-ru" markdown="1">
+ ## Глава III «Mind», «тело» и «внешний мир»/ Chapter III “Mind,” “Body,” and “External World”
 
 ### 1: Ситуация хорошего контакта
 
