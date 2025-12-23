@@ -7,14 +7,13 @@ type: chapter
 ---
 # Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth
 ## Часть 1 Введение /  Part 1 Introduction
-### Глава I. Структура роста / Chapter I The Structure of Growth
+
  <div class="parallel-block"><div class="parallel-controls"><button class="parallel-toggle" data-parallel-toggle>Скрыть оригинал ×</button></div>
  <div class="parallel-columns">
  
 <div class="col col-ru" markdown="1">
-# Том I Новизна, возбуждение и рост
 
-## Часть 1 Введение
+## Глава I. Структура роста
 
 ### 1: Контактная граница
 
@@ -107,6 +106,7 @@ type: chapter
 
     <div class="col col-en" markdown="1">
 
+## Chapter I The Structure of Growth
 
 ### 1: The Contact-Boundary
 
