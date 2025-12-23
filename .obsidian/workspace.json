@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/v1ch15.md",
+                "file": "src/v1ch1.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "v1ch15"
+              "title": "v1ch1"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "0b1a6fc1633808ef",
   "lastOpenFiles": [
+    "src/v1ch15.md",
     "src/v1ch14.md",
     "src/v1ch13.md",
     "src/v1ch12.md",
@@ -185,7 +186,6 @@
     "src/v1ch3.md",
     "src/v1ch2.md",
     "src/v1ch1.md",
-    "src/v1ch15.md",
     "src/intro1.md",
     "eleventy.js",
     "eleventy.js..json",

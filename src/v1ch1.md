@@ -12,6 +12,9 @@ type: chapter
  <div class="parallel-columns">
  
 <div class="col col-ru" markdown="1">
+# Том I Новизна, возбуждение и рост
+
+## Часть 1 Введение
 
 ### 1: Контактная граница
 
