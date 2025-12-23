@@ -28,9 +28,6 @@
     <li class="menu-group">
       <span>Том 1</span>
       <ul class="submenu">
-        {% for ch in collections.chaptersByVolume[1] %}
-      <li><a href="{{ ch.url }}">Глава {{ ch.data.order }}</a></li>
-    {% endfor %}
     {% for ch in collections.chaptersByVolume[1] %}
       <li><a href="{{ ch.url }}">Глава {{ ch.data.order }}</a></li>
     {% endfor %}
@@ -82,29 +79,37 @@
       
     </header>
     <main class="container content">
+{# --- AUTO PREV / NEXT FOR CHAPTERS --- #}
+{% set chapters = collections.chapters %}
+{% set idx = chapters | findIndex(page) %}
 
-  {# --- AUTO PREV / NEXT FOR CHAPTERS --- #}
-  {% set chapters = collections.chapters %}
-  {% set idx = chapters | findIndex(page) %}
+{% if idx > -1 %}
+  {% set prev = null %}
+  {% set next = null %}
+  {% set total = chapters | length %}
 
-  {% if idx > -1 %}
-    {% set prev = idx > 0 ? chapters[idx - 1] : null %}
-    {% set next = idx < (chapters.length - 1) ? chapters[idx + 1] : null %}
-
-    <div class="chapter-nav">
-      <div class="chapter-nav-left">
-        {% if prev %}
-          <a class="chapter-nav-link" href="{{ prev.url }}">← Предыдущая глава</a>
-        {% endif %}
-      </div>
-
-      <div class="chapter-nav-right">
-        {% if next %}
-          <a class="chapter-nav-link" href="{{ next.url }}">Следующая глава →</a>
-        {% endif %}
-      </div>
-    </div>
+  {% if idx > 0 %}
+    {% set prev = chapters[idx - 1] %}
   {% endif %}
+
+  {% if idx < total - 1 %}
+    {% set next = chapters[idx + 1] %}
+  {% endif %}
+
+  <div class="chapter-nav">
+    <div class="chapter-nav-left">
+      {% if prev %}
+        <a class="chapter-nav-link" href="{{ prev.url }}">← Предыдущая глава</a>
+      {% endif %}
+    </div>
+
+    <div class="chapter-nav-right">
+      {% if next %}
+        <a class="chapter-nav-link" href="{{ next.url }}">Следующая глава →</a>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
 
   {{ content | safe }}
       <hr>
