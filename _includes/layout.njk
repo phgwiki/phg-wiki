@@ -28,7 +28,13 @@
     <li class="menu-group">
       <span>Том 1</span>
       <ul class="submenu">
-        <li><a href="/v1ch1">Глава I</a></li>
+        {% for ch in collections.chaptersByVolume[1] %}
+      <li><a href="{{ ch.url }}">Глава {{ ch.data.order }}</a></li>
+    {% endfor %}
+    {% for ch in collections.chaptersByVolume[1] %}
+      <li><a href="{{ ch.url }}">Глава {{ ch.data.order }}</a></li>
+    {% endfor %}
+      <li><a href="/v1ch1">Глава I</a></li>
         <li><a href="/v1ch2">Глава II</a></li>
         <li><a href="/v1ch3">Глава III</a></li>
         <li><a href="/v1ch4">Глава IV</a></li>
