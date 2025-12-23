@@ -5,12 +5,15 @@ order: 2
 volume: 1
 type: chapter
 ---
-# Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth
-## Часть 1 Введение /  Part 1 Introduction
-### Глава II Различия во взглядах и различия в терапии / Chapter II Differences in General Outlook and Differences in Therapy
+Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth
+
+Часть 1 Введение /  Part 1 Introduction
+ 
  <div class="parallel-block"><div class="parallel-controls"><button class="parallel-toggle" data-parallel-toggle>Скрыть оригинал ×</button></div>
  <div class="parallel-columns">
  <div class="col col-ru" markdown="1">
+
+## Глава II Различия во взглядах и различия в терапии
 
 ### 1: Гештальт-терапия и тенденции психоанализа
 
@@ -153,6 +156,7 @@ type: chapter
 [^9]:	Élan vital — термин, введенный французским философом Анри Бергсоном в его книге «Творческая эволюция» (1907), где он рассматривает вопросы самоорганизации и спонтанного формирования сложных структур. В английском переводе термин был передан как *vital impetus* («жизненный импульс»), но его критики зачастую называют *vital force* («жизненная сила»). Élan vital представляет собой гипотетическое объяснение эволюции и развития организмов, которое Бергсон связывал с сознанием — интуитивным восприятием опыта и потока внутреннего времени. — Прим.пер.
 </div>
  <div class="col col-en" markdown="1">
+## Chapter II Differences in General Outlook and Differences in Therapy
 
 ### 1: Gestalt-Therapy and the Trends of Psychoanalysis
 
