@@ -8,10 +8,12 @@ type: chapter
 Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth
 
 Часть 2: Реальность, человеческая природа и общество/ Part 2: Reality, Human Nature, and Society
+
  <div class="parallel-block"><div class="parallel-controls"><button class="parallel-toggle" data-parallel-toggle>Скрыть оригинал ×</button></div>
  <div class="parallel-columns">
  <div class="col col-ru" markdown="1">
- ## Глава III «Mind», «тело» и «внешний мир»/ Chapter III “Mind,” “Body,” and “External World”
+ 
+ ## Глава III «Mind», «тело» и «внешний мир»
 
 ### 1: Ситуация хорошего контакта
 
@@ -218,6 +220,8 @@ type: chapter
 [^11]:	Там же.
 </div>
  <div class="col col-en" markdown="1">
+
+## Chapter III “Mind,” “Body,” and “External World”
 
 ### 1: The Situation in Good Contact
 
