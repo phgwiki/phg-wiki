@@ -74,7 +74,31 @@
       
     </header>
     <main class="container content">
-      {{ content | safe }}
+
+  {# --- AUTO PREV / NEXT FOR CHAPTERS --- #}
+  {% set chapters = collections.chapters %}
+  {% set idx = chapters | findIndex(page) %}
+
+  {% if idx > -1 %}
+    {% set prev = idx > 0 ? chapters[idx - 1] : null %}
+    {% set next = idx < (chapters.length - 1) ? chapters[idx + 1] : null %}
+
+    <div class="chapter-nav">
+      <div class="chapter-nav-left">
+        {% if prev %}
+          <a class="chapter-nav-link" href="{{ prev.url }}">← Предыдущая глава</a>
+        {% endif %}
+      </div>
+
+      <div class="chapter-nav-right">
+        {% if next %}
+          <a class="chapter-nav-link" href="{{ next.url }}">Следующая глава →</a>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+
+  {{ content | safe }}
       <hr>
       <section class="disclaimer">
         <p>{{ site.disclaimer_en }}</p>
