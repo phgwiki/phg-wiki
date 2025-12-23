@@ -6,6 +6,7 @@ volume: 1
 type: chapter
 ---
 Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth
+
 Часть 1 Введение /  Part 1 Introduction
 
  <div class="parallel-block"><div class="parallel-controls"><button class="parallel-toggle" data-parallel-toggle>Скрыть оригинал ×</button></div>
