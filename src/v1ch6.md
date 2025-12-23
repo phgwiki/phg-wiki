@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 title: Том I, Глава VI
-order: 106
+order: 6
 volume: 1
 type: chapter
 ---

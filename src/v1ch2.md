@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 title: Том I, Глава II
-order: 102
+order: 2
 volume: 1
 type: chapter
 ---

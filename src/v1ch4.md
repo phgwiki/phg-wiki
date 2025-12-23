@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 title: Том I, Глава IV
-order: 104
+order: 4
 volume: 1
 type: chapter
 ---

@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 title: Том I, Глава I. Структура роста
-order: 101
+order: 1
 volume: 1
 type: chapter
 ---

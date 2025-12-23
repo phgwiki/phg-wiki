@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 title: Том I, Глава 9
-order: 109
+order: 9
 volume: 1
 type: chapter
 ---

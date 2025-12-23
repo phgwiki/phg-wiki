@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 title: Том I, Глава V
-order: 105
+order: 5
 volume: 1
 type: chapter
 ---

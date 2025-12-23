@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 title: Том I, Глава III
-order: 103
+order: 3
 volume: 1
 type: chapter
 ---

@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 title: Том I, Глава VIII
-order: 108
+order: 8
 volume: 1
 type: chapter
 ---
