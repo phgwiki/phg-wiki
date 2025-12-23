@@ -1,31 +1,159 @@
-{# --- AUTO PREV / NEXT FOR CHAPTERS --- #}
-{% set chapters = collections.chapters %}
-{% set idx = chapters | findIndex(page) %}
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title or site.title }}</title>
 
-{% if idx > -1 %}
-  {% set prev = null %}
-  {% set next = null %}
-  {% set total = chapters | length %}
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap&subset=cyrillic,cyrillic-ext,latin">
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
 
-  {% if idx > 0 %}
-    {% set prev = chapters[idx - 1] %}
-  {% endif %}
+  <body>
+    <header class="container">
+      <h1><a href="/">{{ site.title }}</a></h1>
+      <p class="tagline">{{ site.tagline }}</p>
 
-  {% if idx < total - 1 %}
-    {% set next = chapters[idx + 1] %}
-  {% endif %}
+      {# Debug (можешь убрать потом) #}
+      <p style="opacity:.6;font-size:12px;margin:6px 0 0">
+        chapters in vol1: {{ (collections.chaptersByVolume[1] | length) if collections.chaptersByVolume and collections.chaptersByVolume[1] else 0 }}
+        · vol2: {{ (collections.chaptersByVolume[2] | length) if collections.chaptersByVolume and collections.chaptersByVolume[2] else 0 }}
+      </p>
 
-  <div class="chapter-nav chapter-nav-top">
-    <div class="chapter-nav-left">
-      {% if prev %}
-        <a class="chapter-nav-link" href="{{ prev.url }}">← Предыдущая глава</a>
+      <nav class="chapters-horizontal">
+        <ul>
+          <li class="menu-group">
+            <span>Введения</span>
+            <ul class="submenu">
+              <li><a href="/intro1">К изданию 1994 г.</a></li>
+              <li><a href="/intro2">К изданию 1951 г.</a></li>
+            </ul>
+          </li>
+
+          <li class="menu-group">
+            <span>Том 1</span>
+            <ul class="submenu">
+              {% if collections.chaptersByVolume and collections.chaptersByVolume[1] %}
+                {% for ch in collections.chaptersByVolume[1] %}
+                  <li><a href="{{ ch.url }}">{{ ch.data.menuTitle or ch.data.title or ch.fileSlug }}</a></li>
+                {% endfor %}
+              {% else %}
+                <li><em>Пока нет глав</em></li>
+              {% endif %}
+            </ul>
+          </li>
+
+          <li class="menu-group">
+            <span>Том 2</span>
+            <ul class="submenu">
+              {% if collections.chaptersByVolume and collections.chaptersByVolume[2] %}
+                {% for ch in collections.chaptersByVolume[2] %}
+                  <li><a href="{{ ch.url }}">{{ ch.data.menuTitle or ch.data.title or ch.fileSlug }}</a></li>
+                {% endfor %}
+              {% else %}
+                <li><em>Пока нет глав</em></li>
+              {% endif %}
+            </ul>
+          </li>
+
+          <li class="menu-group">
+            <span>Материалы</span>
+            <ul class="submenu">
+              <li><a href="/glossary">Глоссарий</a></li>
+              <li><a href="/about">О проекте</a></li>
+              <li><a href="/gttl">GTTL</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container content">
+      {# =========================
+         AUTO PREV / NEXT (ТОЛЬКО ДЛЯ ГЛАВ)
+         Требует в frontmatter:
+           type: chapter
+           volume: 1 или 2
+         ========================= #}
+
+      {% set isChapter = (type == "chapter") %}
+      {% if isChapter and collections.chaptersByVolume and collections.chaptersByVolume[volume] %}
+
+        {% set list = collections.chaptersByVolume[volume] %}
+        {% set prev = null %}
+        {% set next = null %}
+        {% set last = null %}
+        {% set found = false %}
+
+        {# Ищем prev/next по совпадению URL #}
+        {% for ch in list %}
+          {% if not found %}
+            {% if ch.url == page.url %}
+              {% set prev = last %}
+              {% set found = true %}
+            {% else %}
+              {% set last = ch %}
+            {% endif %}
+          {% else %}
+            {% if not next %}
+              {% set next = ch %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
+        {# Листалка сверху — “над серой областью” (контентом) #}
+        {% if found %}
+          <div class="chapter-nav chapter-nav-top">
+            <div class="chapter-nav-left">
+              {% if prev %}
+                <a class="chapter-nav-link" href="{{ prev.url }}">← Предыдущая глава</a>
+              {% endif %}
+            </div>
+            <div class="chapter-nav-right">
+              {% if next %}
+                <a class="chapter-nav-link" href="{{ next.url }}">Следующая глава →</a>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+
       {% endif %}
-    </div>
 
-    <div class="chapter-nav-right">
-      {% if next %}
-        <a class="chapter-nav-link" href="{{ next.url }}">Следующая глава →</a>
-      {% endif %}
-    </div>
-  </div>
-{% endif %}
+      {# ====== ВАЖНО: КОНТЕНТ ВСЕГДА РЕНДЕРИТСЯ ====== #}
+      {{ content | safe }}
+
+      <hr>
+
+      <section class="disclaimer">
+        <p>{{ site.disclaimer_en }}</p>
+        <p>{{ site.disclaimer_ru }}</p>
+      </section>
+
+      <section class="comments">
+        {# Giscus (если включишь — раскомментируешь и заполнишь атрибуты) #}
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>© GTTL Translators, 2025 · Research & Educational Use Only</p>
+    </footer>
+
+    <script async src="https://hypothes.is/embed.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const blocks = document.querySelectorAll(".parallel-block");
+        blocks.forEach(function (block) {
+          const btn = block.querySelector("[data-parallel-toggle]");
+          if (!btn) return;
+
+          btn.addEventListener("click", function () {
+            const closed = block.classList.toggle("parallel-closed");
+            btn.textContent = closed ? "Показать оригинал" : "Скрыть оригинал ×";
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
