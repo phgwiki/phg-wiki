@@ -10,13 +10,28 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.setLibrary("md", mdLib);
 
-  // ВАЖНО: сказать Eleventy, где лежит контент и инклюды
+  // ✅ Пропуск ассетов
   eleventyConfig.addPassthroughCopy("assets");
+
+  // ✅ Фильтр: найти индекс текущей страницы в коллекции
+  eleventyConfig.addFilter("findIndex", function(arr, page) {
+    if (!Array.isArray(arr) || !page) return -1;
+    return arr.findIndex(item => item.url === page.url);
+  });
+
+  // ✅ Коллекция глав: берём только type: chapter и сортируем по order
+  eleventyConfig.addCollection("chapters", function(collectionApi) {
+  return collectionApi
+    .getFilteredByGlob("**/*.md")   // <-- ВАЖНО (а не "src/**/*.md")
+    .filter(item => item.data && item.data.type === "chapter")
+    .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
+});
+
   return {
     dir: {
-      input: "src",        // твой контент: ch1.md, intro1.md и т.п.
-      includes: "../_includes", // твои layout'ы лежат в корне
-      data: "../_data",         // данные тоже в корне
+      input: "src",
+      includes: "../_includes",
+      data: "../_data",
       output: "_site"
     }
   };
