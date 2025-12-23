@@ -2,29 +2,24 @@ const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
 
 module.exports = function(eleventyConfig) {
-  const mdLib = markdownIt({
-    html: true,
-    linkify: true,
-    typographer: true,
-  }).use(markdownItFootnote);
+  // Группировка глав по томам
+eleventyConfig.addCollection("chaptersByVolume", function (collectionApi) {
+  const chapters = collectionApi.getFilteredByGlob("**/*.md")
+    .filter(item => item.data && item.data.type === "chapter" && item.data.volume);
 
-  eleventyConfig.setLibrary("md", mdLib);
+  const grouped = {};
+  for (const ch of chapters) {
+    const v = ch.data.volume;
+    if (!grouped[v]) grouped[v] = [];
+    grouped[v].push(ch);
+  }
 
-  // ✅ Пропуск ассетов
-  eleventyConfig.addPassthroughCopy("assets");
+  // сортируем внутри тома по order
+  Object.values(grouped).forEach(arr =>
+    arr.sort((a, b) => (a.data.order || 0) - (b.data.order || 0))
+  );
 
-  // ✅ Фильтр: найти индекс текущей страницы в коллекции
-  eleventyConfig.addFilter("findIndex", function(arr, page) {
-    if (!Array.isArray(arr) || !page) return -1;
-    return arr.findIndex(item => item.url === page.url);
-  });
-
-  // ✅ Коллекция глав: берём только type: chapter и сортируем по order
-  eleventyConfig.addCollection("chapters", function(collectionApi) {
-  return collectionApi
-    .getFilteredByGlob("**/*.md")   // <-- ВАЖНО (а не "src/**/*.md")
-    .filter(item => item.data && item.data.type === "chapter")
-    .sort((a, b) => (a.data.order || 0) - (b.data.order || 0));
+  return grouped;
 });
 
   return {
