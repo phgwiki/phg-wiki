@@ -4,144 +4,123 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ title or site.title }}</title>
+
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap&subset=cyrillic,cyrillic-ext,latin">
     <link rel="stylesheet" href="/assets/style.css">
-    
-    </head>
+  </head>
+
   <body>
     <header class="container">
       <h1><a href="/">{{ site.title }}</a></h1>
       <p class="tagline">{{ site.tagline }}</p>
-<p style="opacity:.6;font-size:12px">
-  chapters count: {{ collections.chapters | length }}
-</p>
+
       <nav class="chapters-horizontal">
-  <ul>
-    <li class="menu-group">
-      <span>Введения</span>
-      <ul class="submenu">
-        <li><a href="/intro1">К изданию 1994 г.</a></li>
-        <li><a href="/intro2">К изданию 1951 г.</a></li>
-      </ul>
-    </li>
-    <li class="menu-group">
-      <span>Том 1</span>
-      <ul class="submenu">
-    {% for ch in collections.chaptersByVolume[1] %}
-      <li><a href="{{ ch.url }}">Глава {{ ch.data.order }}</a></li>
-    {% endfor %}
-      <li><a href="/v1ch1">Глава I</a></li>
-        <li><a href="/v1ch2">Глава II</a></li>
-        <li><a href="/v1ch3">Глава III</a></li>
-        <li><a href="/v1ch4">Глава IV</a></li>
-        <li><a href="/v1ch5">Глава V</a></li>
-        <li><a href="/v1ch6">Глава VI</a></li>
-        <li><a href="/v1ch7">Глава VII</a></li>
-        <li><a href="/v1ch8">Глава VIII</a></li>
-        <li><a href="/v1ch9">Глава IX</a></li>
-        <li><a href="#">Глава X</a></li>
-        <li><a href="#">Глава XI</a></li>
-        <li><a href="#">Глава XII</a></li>
-        <li><a href="#">Глава XIII</a></li>
-        <li><a href="#">Глава XIV</a></li>
-        <li><a href="#">Глава XV</a></li>
-      </ul>
-    </li>
+        <ul>
+          <li class="menu-group">
+            <span>Введения</span>
+            <ul class="submenu">
+              <li><a href="/intro1">К изданию 1994 г.</a></li>
+              <li><a href="/intro2">К изданию 1951 г.</a></li>
+            </ul>
+          </li>
 
-    <li class="menu-group">
-      <span>Том 2</span>
-      <ul class="submenu">
-        <li><a href="#">Глава I</a></li>
-        <li><a href="#">Глава II</a></li>
-        <li><a href="#">Глава III</a></li>
-        <li><a href="#">Глава IV</a></li>
-        <li><a href="#">Глава V</a></li>
-        <li><a href="#">Глава VI</a></li>
-        <li><a href="#">Глава VII</a></li>
-        <li><a href="#">Глава VIII</a></li> 
-      </ul>
-    </li>
+          <li class="menu-group">
+            <span>Том 1</span>
+            <ul class="submenu">
+              {% if collections.chaptersByVolume and collections.chaptersByVolume[1] %}
+                {% for ch in collections.chaptersByVolume[1] %}
+                  <li><a href="{{ ch.url }}">Глава {{ ch.data.order }}</a></li>
+                {% endfor %}
+              {% else %}
+                <li><a href="/v1ch1">Глава I</a></li>
+              {% endif %}
+            </ul>
+          </li>
 
-    <li class="menu-group">
-      <span>Материалы</span>
-      <ul class="submenu">
-        <li><a href="/glossary">Глоссарий</a></li>
-        <li><a href="/about">О проекте</a></li>
-        <li><a href="/gttl">GTTL</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
-        <!-- <nav class="nav"> {% for item in site.nav %}
-          <a href="{{ item.href }}">{{ item.label }}</a>
-        {% endfor %} </nav> old menu--> 
-      
+          <li class="menu-group">
+            <span>Том 2</span>
+            <ul class="submenu">
+              {% if collections.chaptersByVolume and collections.chaptersByVolume[2] %}
+                {% for ch in collections.chaptersByVolume[2] %}
+                  <li><a href="{{ ch.url }}">Глава {{ ch.data.order }}</a></li>
+                {% endfor %}
+              {% else %}
+                <li><a href="#">Глава I</a></li>
+              {% endif %}
+            </ul>
+          </li>
+
+          <li class="menu-group">
+            <span>Материалы</span>
+            <ul class="submenu">
+              <li><a href="/glossary">Глоссарий</a></li>
+              <li><a href="/about">О проекте</a></li>
+              <li><a href="/gttl">GTTL</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
+
     <main class="container content">
-<!-- ВСТАВЛЕННЫЙ БЛОК НАВИГАЦИИ -->
-  {# --- AUTO PREV / NEXT FOR CHAPTERS --- #}
-  {% set chapters = collections.chapters %}
-  {% set idx = chapters | findIndex(page) %}
-  {% if idx > -1 %}
-    {% set prev = idx > 0 ? chapters[idx - 1] : null %}
-    {% set next = idx < (chapters | length) - 1 ? chapters[idx + 1] : null %}
-    <div class="chapter-nav chapter-nav-top">
-      <div class="chapter-nav-left">
-        {% if prev %}<a class="chapter-nav-link" href="{{ prev.url }}">← Предыдущая глава</a>{% endif %}
-      </div>
-      <div class="chapter-nav-right">
-        {% if next %}<a class="chapter-nav-link" href="{{ next.url }}">Следующая глава →</a>{% endif %}
-      </div>
-    </div>
-  {% endif %}
 
-  <!-- КОНТЕНТ -->
-  {{ content | safe }}
+      {# --- ЛИСТАЛКА: ставим ПРЯМО НАД КОНТЕНТОМ (над серым блоком) --- #}
+      {% set chapters = collections.chapters %}
+      {% set idx = chapters | findIndex(page) %}
+      {% if idx > -1 %}
+        {% set prev = idx > 0 ? chapters[idx - 1] : null %}
+        {% set next = idx < (chapters | length) - 1 ? chapters[idx + 1] : null %}
 
-  
+        <div class="chapter-nav chapter-nav-top">
+          <div class="chapter-nav-left">
+            {% if prev %}
+              <a class="chapter-nav-link" href="{{ prev.url }}">← Предыдущая глава</a>
+            {% endif %}
+          </div>
+
+          <div class="chapter-nav-right">
+            {% if next %}
+              <a class="chapter-nav-link" href="{{ next.url }}">Следующая глава →</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+
+      {{ content | safe }}
+
       <hr>
+
       <section class="disclaimer">
         <p>{{ site.disclaimer_en }}</p>
         <p>{{ site.disclaimer_ru }}</p>
       </section>
+
       <section class="comments">
-        <!-- Uncomment to enable Giscus comments (create a repo and fill data-attributes)
-        <script src="https://giscus.app/client.js"
-          data-repo="YOUR_GITHUB_USER/YOUR_REPO_FOR_COMMENTS"
-          data-repo-id="REPO_ID"
-          data-category="General"
-          data-category-id="CATEGORY_ID"
-          data-mapping="pathname"
-          data-strict="1"
-          data-reactions-enabled="1"
-          data-emit-metadata="0"
-          data-input-position="bottom"
-          data-theme="light"
-          crossorigin="anonymous"
-          async>
-        </script>
-        -->
+        <!-- Giscus placeholder -->
       </section>
     </main>
+
     <footer class="container footer">
       <p>© GTTL Translators, 2025 · Research & Educational Use Only</p>
     </footer>
-<script async src="https://hypothes.is/embed.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const blocks = document.querySelectorAll(".parallel-block");
 
-    blocks.forEach(function (block) {
-      const btn = block.querySelector("[data-parallel-toggle]");
-      if (!btn) return;
+    <script async src="https://hypothes.is/embed.js"></script>
 
-      btn.addEventListener("click", function () {
-        const closed = block.classList.toggle("parallel-closed");
-        btn.textContent = closed ? "Показать оригинал" : "Скрыть оригинал ×";
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const blocks = document.querySelectorAll(".parallel-block");
+
+        blocks.forEach(function (block) {
+          const btn = block.querySelector("[data-parallel-toggle]");
+          if (!btn) return;
+
+          btn.addEventListener("click", function () {
+            const closed = block.classList.toggle("parallel-closed");
+            btn.textContent = closed ? "Показать оригинал" : "Скрыть оригинал ×";
+          });
+        });
       });
-    });
-  });
-</script>
+    </script>
   </body>
 </html>
