@@ -1,6 +1,6 @@
 ---
 layout: layout.njk
-title: Том I, Глава VII
+title: Глава VII
 order: 7
 volume: 1
 type: chapter

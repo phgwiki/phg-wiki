@@ -1,8 +1,8 @@
 ---
 layout: layout.njk
-title: Глава XIII
-order: 13
-volume: 1
+title: Глава VIII
+order: 8
+volume: 2
 type: chapter
 ---
 # Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/index.md",
+                "file": "src/v2ch7.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "v2ch7"
             }
           }
         ]
@@ -171,16 +171,17 @@
   },
   "active": "0b1a6fc1633808ef",
   "lastOpenFiles": [
-    "src/v1ch1.md",
-    "assets/logo.png",
-    "assets/logo.svg",
-    "src/v1ch5.md",
-    "src/v1ch4.md",
-    "src/v1ch3.md",
-    "src/v1ch2.md",
+    "src/v2ch8.md",
+    "src/v2ch7.md",
+    "src/v2ch6.md",
+    "src/v2ch5.md",
+    "src/v2ch4.md",
+    "src/v2ch3.md",
+    "src/v2ch2.md",
+    "src/v2ch1.md",
     "src/v1ch15.md",
-    "src/v1ch14.md",
     "src/v1ch13.md",
+    "src/v1ch14.md",
     "src/v1ch12.md",
     "src/v1ch11.md",
     "src/v1ch10.md",
@@ -188,12 +189,18 @@
     "src/v1ch8.md",
     "src/v1ch7.md",
     "src/v1ch6.md",
+    "src/v1ch5.md",
+    "src/v1ch4.md",
+    "src/v1ch3.md",
+    "src/v1ch2.md",
+    "src/v1ch1.md",
+    "src/index.md",
+    "assets/logo.png",
+    "assets/logo.svg",
     "src/intro1.md",
     "eleventy.js",
     "eleventy.js..json",
     "package copy.json",
-    "src/index.md",
-    "src/privet!.md",
-    "src/intro2.md"
+    "src/privet!.md"
   ]
 }
