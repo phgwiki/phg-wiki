@@ -11,19 +11,24 @@
     <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
     <script src="/pagefind/pagefind-ui.js"></script>
   </head>
-
   <body>
     <header class="container">
-      
-      <h1><a href="/">{{ site.title }}</a></h1>
-      <p class="tagline">{{ site.tagline }}</p>
-<div id="search" class="search"></div>
-      {# Debug (можешь убрать потом) #}
-      <p style="opacity:.6;font-size:12px;margin:6px 0 0">
-        chapters in vol1: {{ (collections.chaptersByVolume[1] | length) if collections.chaptersByVolume and collections.chaptersByVolume[1] else 0 }}
-        · vol2: {{ (collections.chaptersByVolume[2] | length) if collections.chaptersByVolume and collections.chaptersByVolume[2] else 0 }}
-      </p>
+  <div class="site-header">
+    <div class="site-header__logo">
+      <a href="/" aria-label="На главную">
+        <img src="/assets/logo.svg" alt="PHG" height="36">
+      </a>
+    </div>
 
+    <div class="site-header__title">
+      <div class="site-title"><a href="/">{{ site.title }}</a></div>
+      <div class="tagline">{{ site.tagline }}</div>
+    </div>
+
+    <div class="site-header__search">
+      <div id="search" class="search"></div>
+    </div>
+  </div>
       <nav class="chapters-horizontal">
         <ul>
           <li class="menu-group">
