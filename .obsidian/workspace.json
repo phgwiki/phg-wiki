@@ -171,6 +171,9 @@
   },
   "active": "0b1a6fc1633808ef",
   "lastOpenFiles": [
+    "assets/logo.png",
+    "assets/logo_.png",
+    "assets/phg_logo.png",
     "src/v2ch8.md",
     "src/v2ch7.md",
     "src/v2ch6.md",
@@ -195,12 +198,10 @@
     "src/v1ch2.md",
     "src/v1ch1.md",
     "src/index.md",
-    "assets/logo.png",
     "assets/logo.svg",
     "src/intro1.md",
     "eleventy.js",
     "eleventy.js..json",
-    "package copy.json",
-    "src/privet!.md"
+    "package copy.json"
   ]
 }
