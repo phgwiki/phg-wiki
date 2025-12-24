@@ -133,75 +133,116 @@ a:hover {
   gap: 2rem;
 }
 
-/* ГОРИЗОНТАЛЬНОЕ МЕНЮ */
-.chapters-horizontal ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 2.5rem;
-    align-items: center;
+/* =========================
+   ГОРИЗОНТАЛЬНОЕ МЕНЮ
+   ========================= */
+
+/* только верхний уровень */
+.chapters-horizontal > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
 }
 
+/* группа (Том 1, Том 2 и т.п.) */
 .chapters-horizontal .menu-group {
-    position: relative;
-    font-family: "Inter", sans-serif;
-    font-weight: 500;
-    font-size: 1.15rem;
-    cursor: pointer;
-}
-
-.chapters-horizontal .menu-group > span {
-    text-transform: uppercase;
-    color: #333;
+  position: relative;
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 1.05rem;
   cursor: pointer;
 }
 
-.chapter-horizontal .menu-group:hover > span {
-    color: black;
+/* заголовок группы */
+.chapters-horizontal .menu-group > span {
+  text-transform: uppercase;
+  color: #333;
+  cursor: pointer;
+  white-space: nowrap;
 }
 
-/* ВЫПАДАЮЩИЕ ПОДМЕНЮ */
+.chapters-horizontal .menu-group:hover > span {
+  color: #000;
+}
+
+/* =========================
+   ВЫПАДАЮЩЕЕ ПОДМЕНЮ
+   ========================= */
+
 .chapters-horizontal .submenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    padding: 0.6rem 1rem;
-    border-radius: 6px;
-    box-shadow: 0px 8px 20px rgba(0,0,0,0.08);
-    min-width: 180px;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 0.15s ease;
-    z-index: 1000;
+  list-style: none;
+  margin: 0;
+  padding: 0.6rem 1rem;
+
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+
+  min-width: 190px;
+
+  /* скрыто по умолчанию */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  /* ВАЖНО: вертикальное */
+  display: block;
+
+  transition: opacity .15s ease, visibility .15s ease;
+  z-index: 1000;
 }
 
+/* показать подменю */
 .chapters-horizontal .menu-group:hover .submenu {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
 
+/* пункты подменю */
 .chapters-horizontal .submenu li {
-    margin: 0.4rem 0;
-  display: block;          /* каждый пункт вертикально */
+  display: block;
   width: 100%;
+  margin: 0.35rem 0;
 }
 
 .chapters-horizontal .submenu a {
-    text-decoration: none;
-    font-family: "Inter", sans-serif;
-    font-size: 1.05rem;
-    color: #444;
-    transition: color 0.2s;
-  display: block; 
+  display: block;
+  text-decoration: none;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.95rem;
+  color: #444;
+  white-space: nowrap;
 }
 
 .chapters-horizontal .submenu a:hover {
-    color: black;
+  color: #000;
+  text-decoration: underline;
 }
+
+/* =========================
+   МОСТИК ДЛЯ КУРСОРА
+   чтобы меню не пропадало
+   ========================= */
+
+.chapters-horizontal .menu-group::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 12px;
+  pointer-events: auto;
+}
+
+/*Листалка предыдущая - следующая глава */
 .chapter-nav {
   display: flex;
   align-items: baseline;
@@ -224,8 +265,6 @@ a:hover {
   font-family: "Inter", system-ui, sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.10em;
   color: #666;
   text-decoration: none;
   white-space: nowrap;
@@ -236,14 +275,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.menu-group::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
-  height: 8px;
-}
+/*Поиск */
 
 .search {
   margin: 12px 0 24px;
