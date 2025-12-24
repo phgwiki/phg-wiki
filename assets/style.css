@@ -186,6 +186,8 @@ a:hover {
 
 .chapters-horizontal .submenu li {
     margin: 0.4rem 0;
+  display: block;          /* каждый пункт вертикально */
+  width: 100%;
 }
 
 .chapters-horizontal .submenu a {
@@ -194,6 +196,7 @@ a:hover {
     font-size: 1.05rem;
     color: #444;
     transition: color 0.2s;
+  display: block; 
 }
 
 .chapters-horizontal .submenu a:hover {
