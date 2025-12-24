@@ -116,12 +116,12 @@
           <div class="chapter-nav chapter-nav-top">
             <div class="chapter-nav-left">
               {% if prev %}
-                <a class="chapter-nav-link" href="{{ prev.url }}">← Предыдущая глава</a>
+                <a class="chapter-nav-link" href="{{ prev.url }}">← {{ prev.data.title }}</a>
               {% endif %}
             </div>
             <div class="chapter-nav-right">
               {% if next %}
-                <a class="chapter-nav-link" href="{{ next.url }}">Следующая глава →</a>
+                <a class="chapter-nav-link" href="{{ next.url }}">{{ next.data.title }} →</a>
               {% endif %}
             </div>
           </div>
