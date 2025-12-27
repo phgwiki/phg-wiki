@@ -23,13 +23,21 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
 .parallel-nav-grid {
   display: grid;
   grid-template-columns: 54% 46%;
+  gap: 2rem;
   align-items: center;
-  margin-bottom: 0.75rem;
-  font-family: "Inter", sans-serif;
+  margin: 0 0 .75rem 0;
 }
 .parallel-nav-grid .col-ru {
-  text-align: left;
+  justify-self: start;
 }
+
+.parallel-nav-grid .col-en.parallel-nav-right{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* toggle слева, next справа */
+  gap: 1rem;
+}
+
 .parallel-nav-grid .col-en {
   display: flex;
   justify-content: space-between;
@@ -41,12 +49,21 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
   color: #666;
 }
 
-.parallel-nav-grid .parallel-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 0.85rem;
+.parallel-nav-grid .parallel-toggle{
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
   color: #666;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.parallel-nav-grid .parallel-toggle:hover{
+  color: #000;
+  text-decoration: underline;
 }
 
 /* Параллельный текст: две колонки */
