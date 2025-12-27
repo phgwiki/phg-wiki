@@ -119,9 +119,7 @@
   </div>
 
   <div class="col-en parallel-nav-right">
-    <button class="parallel-toggle" type="button" data-parallel-toggle>
-      Скрыть оригинал ×
-    </button>
+    
 
     {% if next %}
       <a class="chapter-nav-link" href="{{ next.url }}">{{ next.data.title }} →</a>
@@ -167,13 +165,23 @@
 
     <script async src="https://hypothes.is/embed.js"></script>
 
-    <script>
+   <script>
 document.addEventListener("DOMContentLoaded", function () {
+  // 1) Переносим parallel-nav-grid внутрь .parallel-block (перед .parallel-controls)
+  const nav = document.querySelector(".parallel-nav-grid");
+  const block = document.querySelector(".parallel-block");
 
-  
+  if (nav && block) {
+    const controls = block.querySelector(".parallel-controls");
+    if (controls) {
+      block.insertBefore(nav, controls);
+    } else {
+      block.prepend(nav);
+    }
+  }
 
-  // 2) Тоггл скрытия оригинала
-  document.querySelectorAll(".parallel-block").forEach(block => {
+  // 2) Тоггл скрытия оригинала (для каждого parallel-block)
+  document.querySelectorAll(".parallel-block").forEach((block) => {
     const btn = block.querySelector("[data-parallel-toggle]");
     if (!btn) return;
 
@@ -182,7 +190,6 @@ document.addEventListener("DOMContentLoaded", function () {
       btn.textContent = closed ? "Показать оригинал" : "Скрыть оригинал ×";
     });
   });
-
 });
 </script>
   </body>
