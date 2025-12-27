@@ -773,7 +773,7 @@ sup { font-size: 0.7em; }
 .parallel-nav-grid .nav-en {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: right;
   gap: 1rem;
 }
 
