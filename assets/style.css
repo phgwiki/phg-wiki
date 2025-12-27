@@ -772,7 +772,7 @@ sup { font-size: 0.7em; }
 /* Правая часть: toggle слева, next справа во 2-й колонке */
 .parallel-nav-grid .nav-en {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: right;
   gap: 1rem;
 }
