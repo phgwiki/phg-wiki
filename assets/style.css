@@ -38,20 +38,20 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
 }
 
 .parallel-controls .chapter-nav {
+  justify-self: end;
   display: flex;
   gap: 1rem;
   font-family: "Inter", system-ui, sans-serif;
   font-size: 0.85rem;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: #666;
 }
 
 .parallel-toggle {
   font-family: "Inter", system-ui, sans-serif;
+  justify-self: start;
   font-size: 0.85rem;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: #666;
 }
 
