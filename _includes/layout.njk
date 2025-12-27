@@ -151,31 +151,29 @@
     <script async src="https://hypothes.is/embed.js"></script>
 
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // 1) Переместить навигацию внутрь первого серого блока
-    const nav = document.querySelector("[data-chapter-nav]");
-    const firstParallel = document.querySelector(".parallel-block");
-    if (nav && firstParallel) {
-      const controls = firstParallel.querySelector(".parallel-controls");
-      if (controls) {
-        firstParallel.insertBefore(nav, controls); // прямо над кнопкой "Скрыть оригинал"
-      } else {
-        firstParallel.prepend(nav); // на всякий случай
-      }
-    }
+document.addEventListener("DOMContentLoaded", function () {
 
-    // 2) Твой текущий код переключателя оригинала
-    const blocks = document.querySelectorAll(".parallel-block");
-    blocks.forEach(function (block) {
-      const btn = block.querySelector("[data-parallel-toggle]");
-      if (!btn) return;
+  // === 1. Вставляем навигацию в панель управления параллельным текстом ===
+  const nav = document.querySelector("[data-chapter-nav]");
+  const block = document.querySelector(".parallel-block");
+  const controls = block?.querySelector(".parallel-controls");
 
-      btn.addEventListener("click", function () {
-        const closed = block.classList.toggle("parallel-closed");
-        btn.textContent = closed ? "Показать оригинал" : "Скрыть оригинал ×";
-      });
+  if (nav && block && controls) {
+    controls.prepend(nav);
+  }
+
+  // === 2. Кнопка скрытия оригинала ===
+  document.querySelectorAll(".parallel-block").forEach(block => {
+    const btn = block.querySelector("[data-parallel-toggle]");
+    if (!btn) return;
+
+    btn.addEventListener("click", () => {
+      const closed = block.classList.toggle("parallel-closed");
+      btn.textContent = closed ? "Показать оригинал" : "Скрыть оригинал ×";
     });
   });
+
+});
 </script>
     <script>
       window.addEventListener("DOMContentLoaded", () => {
