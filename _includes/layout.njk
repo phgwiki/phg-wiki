@@ -110,25 +110,24 @@
     {% endif %}
   {% endfor %}
 
-  {% if found %}
-    <div class="parallel-nav" data-chapter-nav>
-      <div class="parallel-nav-left">
-        {% if prev %}
-          <a class="chapter-nav-link" href="{{ prev.url }}">← {{ prev.data.title }}</a>
-        {% endif %}
-      </div>
+  {% if isChapter and found %}
+<div class="parallel-nav-grid">
+  <div class="col-ru">
+    {% if prev %}
+      <a class="chapter-nav-link" href="{{ prev.url }}">← {{ prev.data.title }}</a>
+    {% endif %}
+  </div>
 
-      <div class="parallel-nav-right">
-        <button class="parallel-toggle" type="button" data-parallel-toggle>
-          Скрыть оригинал ×
-        </button>
+  <div class="col-en parallel-nav-right">
+    <button class="parallel-toggle" type="button" data-parallel-toggle>
+      Скрыть оригинал ×
+    </button>
 
-        {% if next %}
-          <a class="chapter-nav-link" href="{{ next.url }}">{{ next.data.title }} →</a>
-        {% endif %}
-      </div>
-    </div>
-  {% endif %}
+    {% if next %}
+      <a class="chapter-nav-link" href="{{ next.url }}">{{ next.data.title }} →</a>
+    {% endif %}
+  </div>
+</div>
 {% endif %}
 
         {# Листалка сверху — “над серой областью” (контентом) #}
