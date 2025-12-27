@@ -724,7 +724,7 @@ sup { font-size: 0.7em; }
 .parallel-columns .col-ru {
   width: 54%;
   min-width: 0;
-  border:solid 1px;
+  border:solid 1px blue;
 }
 .parallel-columns .col-ru,
 .parallel-columns .col-ru p {
@@ -740,7 +740,7 @@ sup { font-size: 0.7em; }
 .parallel-columns .col-en {
   width: 46%;
   min-width: 0;
-  border:solid 1px;
+  border:solid 1px red;
 }
 .parallel-columns .col-en,
 .parallel-columns .col-en p {
@@ -765,10 +765,9 @@ sup { font-size: 0.7em; }
   grid-template-columns: 54% 46%;
   gap: var(--gap);
   align-items: center;
-  margin: 0 0 0.75rem 0;
   width: 100%;
   box-sizing: border-box;
-  border: solid 1px;
+  border: solid 1px green;
 }
 
 /* Левая часть (prev) прижата к левому краю 1-й колонки */
