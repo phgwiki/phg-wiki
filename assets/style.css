@@ -20,6 +20,35 @@ nav, nav a, .site-nav a {
 code { background: #f6f8fa; padding: .1rem .3rem; border-radius: 4px; }
 hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
 
+.parallel-nav-grid {
+  display: grid;
+  grid-template-columns: 54% 46%;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  font-family: "Inter", sans-serif;
+}
+.parallel-nav-grid .col-ru {
+  text-align: left;
+}
+.parallel-nav-grid .col-en {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parallel-nav-grid .chapter-nav-link {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.parallel-nav-grid .parallel-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #666;
+}
+
 /* Параллельный текст: две колонки */
 .parallel-block {
   border: 1px solid #eee;
