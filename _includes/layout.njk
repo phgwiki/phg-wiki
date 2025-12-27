@@ -80,39 +80,59 @@
 
     <main class="container content" data-pagefind-body>
       {# =========================
-         AUTO PREV / NEXT (ТОЛЬКО ДЛЯ ГЛАВ)
-         Требует в frontmatter:
-           type: chapter
-           volume: 1 или 2
-         ========================= #}
+   AUTO PREV / NEXT (ТОЛЬКО ДЛЯ ГЛАВ)
+   Требует в frontmatter:
+     type: chapter
+     volume: 1 или 2
+   ========================= #}
 
-      {% set isChapter = (type == "chapter") %}
-      {% if isChapter and collections.chaptersByVolume and collections.chaptersByVolume[volume] %}
+{% set isChapter = (type == "chapter") %}
+{% if isChapter and collections.chaptersByVolume and collections.chaptersByVolume[volume] %}
+  {% set list = collections.chaptersByVolume[volume] %}
+  {% set prev = null %}
+  {% set next = null %}
+  {% set last = null %}
+  {% set found = false %}
 
-        {% set list = collections.chaptersByVolume[volume] %}
-        {% set prev = null %}
-        {% set next = null %}
-        {% set last = null %}
-        {% set found = false %}
+  {# Ищем prev/next по совпадению URL #}
+  {% for ch in list %}
+    {% if not found %}
+      {% if ch.url == page.url %}
+        {% set prev = last %}
+        {% set found = true %}
+      {% else %}
+        {% set last = ch %}
+      {% endif %}
+    {% else %}
+      {% if not next %}
+        {% set next = ch %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 
-        {# Ищем prev/next по совпадению URL #}
-        {% for ch in list %}
-          {% if not found %}
-            {% if ch.url == page.url %}
-              {% set prev = last %}
-              {% set found = true %}
-            {% else %}
-              {% set last = ch %}
-            {% endif %}
-          {% else %}
-            {% if not next %}
-              {% set next = ch %}
-            {% endif %}
-          {% endif %}
-        {% endfor %}
+  {% if found %}
+    <div class="parallel-nav" data-chapter-nav>
+      <div class="parallel-nav-left">
+        {% if prev %}
+          <a class="chapter-nav-link" href="{{ prev.url }}">← {{ prev.data.title }}</a>
+        {% endif %}
+      </div>
+
+      <div class="parallel-nav-right">
+        <button class="parallel-toggle" type="button" data-parallel-toggle>
+          Скрыть оригинал ×
+        </button>
+
+        {% if next %}
+          <a class="chapter-nav-link" href="{{ next.url }}">{{ next.data.title }} →</a>
+        {% endif %}
+      </div>
+    </div>
+  {% endif %}
+{% endif %}
 
         {# Листалка сверху — “над серой областью” (контентом) #}
-        {% if found %}
+        {# {% if found %}
           <div class="chapter-nav chapter-nav-top" data-chapter-nav>
             <div class="chapter-nav-left">
               {% if prev %}
@@ -125,9 +145,7 @@
               {% endif %}
             </div>
           </div>
-        {% endif %}
-
-      {% endif %}
+        {% endif %} #}
 
       {# ====== ВАЖНО: КОНТЕНТ ВСЕГДА РЕНДЕРИТСЯ ====== #}
       {{ content | safe }}
@@ -153,7 +171,7 @@
     <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  // === 1. Вставляем навигацию в панель управления параллельным текстом ===
+  // 1) Переносим nav внутрь серого блока (если он есть на странице)
   const nav = document.querySelector("[data-chapter-nav]");
   const block = document.querySelector(".parallel-block");
   const controls = block?.querySelector(".parallel-controls");
@@ -162,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
     controls.prepend(nav);
   }
 
-  // === 2. Кнопка скрытия оригинала ===
+  // 2) Тоггл скрытия оригинала
   document.querySelectorAll(".parallel-block").forEach(block => {
     const btn = block.querySelector("[data-parallel-toggle]");
     if (!btn) return;
@@ -175,16 +193,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
-    <script>
-      window.addEventListener("DOMContentLoaded", () => {
-        if (window.PagefindUI) {
-          new PagefindUI({
-            element: "#search",
-            showSubResults: true,
-            highlightParam: "highlight"
-          });
-        }
-      });
-    </script>
   </body>
 </html>
