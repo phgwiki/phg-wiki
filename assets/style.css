@@ -819,7 +819,7 @@ sup { font-size: 0.7em; }
 /* =========================================================
    RESPONSIVE
    ========================================================= */
-@media (max-width: 1020px) {
+@media (max-width: 1000px) {
   .site-header {
     grid-template-columns: auto 1fr;
     grid-template-areas:
