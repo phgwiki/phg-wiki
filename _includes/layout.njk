@@ -129,7 +129,7 @@
   </div>
 </div>
 {% endif %}
-
+{% endif %}
         {# Листалка сверху — “над серой областью” (контентом) #}
         {# {% if found %}
           <div class="chapter-nav chapter-nav-top" data-chapter-nav>
@@ -170,14 +170,7 @@
     <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  // 1) Переносим nav внутрь серого блока (если он есть на странице)
-  const nav = document.querySelector("[data-chapter-nav]");
-  const block = document.querySelector(".parallel-block");
-  const controls = block?.querySelector(".parallel-controls");
-
-  if (nav && block && controls) {
-    controls.prepend(nav);
-  }
+  
 
   // 2) Тоггл скрытия оригинала
   document.querySelectorAll(".parallel-block").forEach(block => {
