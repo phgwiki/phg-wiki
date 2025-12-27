@@ -706,7 +706,7 @@ sup { font-size: 0.7em; }
   font-weight: 500;
   font-size: 0.8rem;
   color: var(--muted);
-  border: solid;
+  border: solid orange 1px;
   background: transparent;
   padding: 0;
   cursor: pointer;
@@ -773,19 +773,15 @@ sup { font-size: 0.7em; }
 
 /* Левая часть (prev) прижата к левому краю 1-й колонки */
 .parallel-nav-grid .nav-ru {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  border:solid 1px;
+  
+  border:dotted 1px;
 }
 
 /* Правая часть: toggle слева, next справа во 2-й колонке */
 .parallel-nav-grid .nav-en {
-  display: flex;
-  width: 100%;
-  box-sizing: border-box;
-  border:solid 1px;
-  padding: 0;
+  
+  border:dashed 1px;
+  
 }
 
 /* Общий вид ссылок навигации */
