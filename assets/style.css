@@ -34,7 +34,7 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
   text-indent: 0 !important;
   font-family: "Inter", system-ui, sans-serif !important;
   font-weight: 500 !important;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   line-height: 1.2;
 }
 
@@ -49,6 +49,8 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
   align-items: center;
   justify-content: space-between; 
   gap: 1rem;
+margin-right: 0;
+  padding-right: 0;
 }
 
 
@@ -676,7 +678,6 @@ sup { font-size: 0.7em; }
 /* =========================================================
    CONTENT AREA
    ========================================================= */
-.content {}
 
 /* =========================================================
    PARALLEL BLOCK (two columns)
@@ -780,17 +781,19 @@ sup { font-size: 0.7em; }
   gap: 1rem;
   width: 100%;
   box-sizing: border-box;
+  margin-right: 0;
+  padding-right: 0;
 }
 
 /* Общий вид ссылок навигации */
 .parallel-nav-grid .nav-en .chapter-nav-link {
   font-family: "Inter", system-ui, sans-serif;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   color: var(--muted);
   white-space: nowrap;
   flex: 0 0 auto;
-  margin-left: auto;        /* дополнительная страховка */
+  
 }
 .parallel-nav-grid .chapter-nav-link:hover {
   color: #000;
