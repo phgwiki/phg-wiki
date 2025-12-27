@@ -112,13 +112,13 @@
 
   {% if isChapter and found %}
 <div class="parallel-nav-grid">
-  <div class="col-ru">
+  <div class="nav-ru">
     {% if prev %}
       <a class="chapter-nav-link" href="{{ prev.url }}">← {{ prev.data.title }}</a>
     {% endif %}
   </div>
 
-  <div class="col-en parallel-nav-right">
+  <div class="nav-en parallel-nav-right">
     
 
     {% if next %}
@@ -130,18 +130,16 @@
 {% endif %}
         {# Листалка сверху — “над серой областью” (контентом) #}
         {# {% if found %}
-          <div class="chapter-nav chapter-nav-top" data-chapter-nav>
-            <div class="chapter-nav-left">
-              {% if prev %}
-                <a class="chapter-nav-link" href="{{ prev.url }}">← {{ prev.data.title }}</a>
-              {% endif %}
-            </div>
-            <div class="chapter-nav-right">
-              {% if next %}
-                <a class="chapter-nav-link" href="{{ next.url }}">{{ next.data.title }} →</a>
-              {% endif %}
-            </div>
-          </div>
+          <div class="parallel-nav-grid" data-parallel-nav>
+  <div class="nav-ru">
+    <!-- prev -->
+  </div>
+
+  <div class="nav-en">
+    <button class="parallel-toggle" type="button" data-parallel-toggle>Скрыть оригинал ×</button>
+    <!-- next -->
+  </div>
+</div>
         {% endif %} #}
 
       {# ====== ВАЖНО: КОНТЕНТ ВСЕГДА РЕНДЕРИТСЯ ====== #}
