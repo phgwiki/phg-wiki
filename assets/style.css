@@ -687,6 +687,7 @@ sup { font-size: 0.7em; }
   padding: 0.75rem;
   margin: 1.5rem 0;
   background: var(--bg-soft);
+  overflow: hidden;
 }
 
 /* Верхняя панель (контролы внутри параллельного блока) */
@@ -760,6 +761,8 @@ sup { font-size: 0.7em; }
   gap: var(--gap);
   align-items: center;
   margin: 0 0 0.75rem 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Левая часть (prev) прижата к левому краю 1-й колонки */
@@ -775,6 +778,8 @@ sup { font-size: 0.7em; }
   justify-content: flex-end;
   align-items: center;
   gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Общий вид ссылок навигации */
