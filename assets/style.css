@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Jost:wght@400;500;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Jost:wght@400;500;600&display=swap');
 
 :root { --max: 860px; }
 
@@ -37,7 +37,7 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
   font-size: 0.9rem;
   line-height: 1.2;
 }
-/* prev — строго к левому краю 1-й колонки */
+
 .parallel-nav-grid .col-ru{
   display: flex;
   justify-content: flex-start;
@@ -47,7 +47,7 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
 .parallel-nav-grid .col-en.parallel-nav-right{
   display: flex;
   align-items: center;
-  justify-content: space-between; /* toggle слева, next справа */
+  justify-content: space-between; 
   gap: 1rem;
 }
 
@@ -62,7 +62,6 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
   white-space: nowrap;
 }
 
-/* в 2-й колонке: toggle слева, next справа — в одну строку */
 .parallel-nav-grid .parallel-nav-right{
   display: flex;
   justify-content: space-between;
@@ -75,7 +74,7 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
   color: #000;
   text-decoration: underline;
 }
-/* toggle как текстовая кнопка (без рамки/фона) */
+
 .parallel-nav-grid .parallel-toggle{
   appearance: none;
   -webkit-appearance: none;
@@ -96,7 +95,6 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
   text-decoration: underline;
 }
 
-/* Параллельный текст: две колонки */
 .parallel-block {
   border: 1px solid #eee;
   border-radius: 8px;
@@ -135,7 +133,7 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
     text-indent: 1.3em;
 }
 
-/* Когда оригинал скрыт */
+
 .parallel-block.parallel-closed .col-en {
   display: none;
 }
@@ -143,7 +141,7 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
 .parallel-block.parallel-closed .col-ru {
   width: 100%;
 }
-/* Основной текст: спокойный книжный стиль */
+
 .col-ru, .col-ru p {
     font-family: 'Jost', system-ui, sans-serif !important;
     font-weight: 400 !important;
@@ -152,9 +150,6 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
     text-indent: 1.5em;
 }
 
-
-
-/* Заголовки — жирные, но без слишком больших отступов */
 h1, h2, h3, h4 {
   font-family: 'Jost', sans-serif;
   font-weight: 600;
@@ -163,18 +158,16 @@ h1, h2, h3, h4 {
   margin-bottom: 1rem;
 }
 
-/* Рекомендованные размеры */
+
 h1 { font-size: 2rem; font-weight: 600; }
 h2 { font-size: 1.8rem; }
 h3 { font-size: 1.3rem; }
 h4 { font-size: 0.8rem; }
 
-/* Сноски — чтобы выглядели аккуратно */
+
 sup {
   font-size: 0.7em;
 }
-
-/* Список сносок */
 .footnotes {
   margin-top: 3em;
   border-top: 1px solid #ddd;
@@ -182,8 +175,6 @@ sup {
   font-size: 0.9em;
   color: #444;
 }
-
-/* Ссылки */
 a {
   color: #524c3e;
   text-decoration: none;
@@ -193,16 +184,10 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Если используете две колонки — немного пространства */
 .parallel-columns {
   gap: 2rem;
 }
 
-/* =========================
-   ГОРИЗОНТАЛЬНОЕ МЕНЮ
-   ========================= */
-
-/* только верхний уровень */
 .chapters-horizontal > ul {
   list-style: none;
   margin: 0;
@@ -212,7 +197,7 @@ a:hover {
   align-items: center;
 }
 
-/* группа (Том 1, Том 2 и т.п.) */
+
 .chapters-horizontal .menu-group {
   position: relative;
   font-family: "Inter", system-ui, sans-serif;
@@ -221,7 +206,6 @@ a:hover {
   cursor: pointer;
 }
 
-/* заголовок группы */
 .chapters-horizontal .menu-group > span {
   text-transform: uppercase;
   color: #333;
@@ -232,10 +216,6 @@ a:hover {
 .chapters-horizontal .menu-group:hover > span {
   color: #000;
 }
-
-/* =========================
-   ВЫПАДАЮЩЕЕ ПОДМЕНЮ
-   ========================= */
 
 .chapters-horizontal .submenu {
   list-style: none;
@@ -252,26 +232,24 @@ a:hover {
 
   min-width: 190px;
 
-  /* скрыто по умолчанию */
+
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 
-  /* ВАЖНО: вертикальное */
+
   display: block;
 
   transition: opacity .15s ease, visibility .15s ease;
   z-index: 1000;
 }
 
-/* показать подменю */
 .chapters-horizontal .menu-group:hover .submenu {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
 
-/* пункты подменю */
 .chapters-horizontal .submenu li {
   display: block;
   width: 100%;
@@ -292,11 +270,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* =========================
-   МОСТИК ДЛЯ КУРСОРА
-   чтобы меню не пропадало
-   ========================= */
-
 .chapters-horizontal .menu-group::after {
   content: "";
   position: absolute;
@@ -307,7 +280,6 @@ a:hover {
   pointer-events: auto;
 }
 
-/*Листалка предыдущая - следующая глава */
 .chapter-nav {
   display: flex;
   align-items: baseline;
@@ -340,8 +312,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/*Поиск */
-
 .search {
   margin: 12px 0 24px;
 }
@@ -359,19 +329,14 @@ a:hover {
   margin-top: 10px;
 }
 
-/*Результаты поиска */
-
-/* Pagefind: не ломаем grid-шапку, результаты — поверх */
 .site-header__search {
-  position: relative; /* якорь для absolute */
+  position: relative; 
 }
 
-/* Контейнер Pagefind UI */
 .site-header__search .pagefind-ui {
   width: 100%;
 }
 
-/* Результаты не должны растягивать колонку хедера */
 .site-header__search .pagefind-ui__results-area {
   position: absolute;
   top: calc(100% + 10px);
@@ -390,16 +355,14 @@ a:hover {
   z-index: 9999;
 }
 
-/* Чтобы “29 результатов…” и разделители выглядели нормально в панели */
 .site-header__search .pagefind-ui__results-area * {
   max-width: 100%;
 }
 
-/* На мобиле лучше сделать панель фиксированной на весь экран */
 @media (max-width: 820px) {
   .site-header__search .pagefind-ui__results-area {
     position: fixed;
-    top: 92px;      /* если шапка выше/ниже — подправишь */
+    top: 92px;   
     left: 12px;
     right: 12px;
     max-height: calc(100vh - 110px);
@@ -440,12 +403,10 @@ a:hover {
   width:100%;
 }
 
-/* ВАЖНО: чтобы поиск не расползался */
 .site-header__search .search{
   width:100%;
 }
 
-/* Мобильная адаптация */
 @media (max-width: 820px){
   .site-header{
     grid-template-columns:auto 1fr;
@@ -458,5 +419,439 @@ a:hover {
   .site-header__search{
     grid-area:search;
     justify-self:stretch;
+  }
+} */
+
+/* =========================================================
+   FONTS
+   ========================================================= */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Jost:wght@400;500;600&display=swap");
+
+:root {
+  --max: 860px;
+  --gap: 2rem;
+
+  --text: #222;
+  --muted: #666;
+  --link: #524c3e;
+
+  --bg-soft: #fafafa;
+  --border: #eee;
+
+  --radius: 10px;
+}
+
+/* =========================================================
+   BASE
+   ========================================================= */
+* { box-sizing: border-box; }
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: var(--text);
+  font-family: "Jost", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* Контейнер страницы */
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.2rem;
+}
+
+/* Ссылки */
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+/* Горизонтальная линия */
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+/* Код */
+code {
+  background: #f6f8fa;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+}
+
+/* Блокцитата */
+.content blockquote {
+  border-left: 3px solid #ddd;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background: var(--bg-soft);
+  color: #333;
+}
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+/* Заголовки */
+h1, h2, h3, h4 {
+  font-family: "Jost", system-ui, sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 2.2rem 0 1rem;
+}
+h1 { font-size: 2rem; margin-top: 0; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.3rem; }
+h4 { font-size: 0.95rem; }
+
+/* Сноски */
+sup { font-size: 0.7em; }
+
+/* Список сносок */
+.footnotes {
+  margin-top: 3em;
+  border-top: 1px solid #ddd;
+  padding-top: 1em;
+  font-size: 0.95em;
+  color: #444;
+}
+
+/* =========================================================
+   HEADER: logo | title | search
+   ========================================================= */
+.site-header {
+  display: grid;
+  grid-template-columns: auto 1fr minmax(240px, 380px);
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0 10px;
+}
+
+.site-header__logo img { display: block; }
+
+.site-title a {
+  font-family: "Jost", system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.tagline {
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--muted);
+}
+
+/* Поиск в шапке */
+.site-header__search {
+  justify-self: end;
+  width: 100%;
+}
+
+/* Pagefind input */
+#search .pagefind-ui__search-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+/* ВАЖНО: результаты поиска не должны “жить” внутри грида шапки */
+#search .pagefind-ui__results-area,
+#search .pagefind-ui__drawer {
+  position: absolute;
+  right: 0;
+  left: auto;
+  top: calc(100% + 8px);
+  width: min(720px, calc(100vw - 24px));
+  max-height: min(70vh, 640px);
+  overflow: auto;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.10);
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+  padding: 12px 14px;
+  z-index: 2000;
+}
+
+/* Нужно, чтобы позиционирование работало */
+.site-header__search { position: relative; }
+
+/* =========================================================
+   MAIN NAV (dropdowns)
+   ========================================================= */
+.chapters-horizontal ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Верхний уровень меню */
+.chapters-horizontal > ul {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 0;
+}
+
+.chapters-horizontal .menu-group {
+  position: relative;
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 1.05rem;
+}
+
+.chapters-horizontal .menu-group > span {
+  text-transform: uppercase;
+  color: #333;
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 0;
+}
+
+/* “мостик”, чтобы меню не исчезало при переходе мышью */
+.chapters-horizontal .menu-group::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 10px;
+}
+
+/* Подменю */
+.chapters-horizontal .submenu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  background: #fff;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 26px rgba(0,0,0,0.10);
+  min-width: 220px;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(-2px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+
+  z-index: 1500;
+}
+
+.chapters-horizontal .menu-group:hover .submenu,
+.chapters-horizontal .menu-group:focus-within .submenu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.chapters-horizontal .submenu li {
+  display: block;
+  width: 100%;
+  margin: 0.35rem 0;
+}
+
+.chapters-horizontal .submenu a {
+  display: block;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 1rem;
+  color: #444;
+  padding: 6px 0;
+}
+
+.chapters-horizontal .submenu a:hover { color: #000; }
+
+/* =========================================================
+   CONTENT AREA
+   ========================================================= */
+.content {}
+
+/* =========================================================
+   PARALLEL BLOCK (two columns)
+   ========================================================= */
+.parallel-block {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  margin: 1.5rem 0;
+  background: var(--bg-soft);
+}
+
+/* Верхняя панель (контролы внутри параллельного блока) */
+.parallel-controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0.5rem;
+}
+
+/* Кнопка toggle */
+.parallel-toggle {
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--muted);
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.parallel-toggle:hover { color: #000; text-decoration: underline; }
+
+/* Колонки параллельного текста */
+.parallel-columns {
+  display: flex;
+  gap: var(--gap);
+}
+
+/* РУ: книжный абзац */
+.parallel-columns .col-ru {
+  width: 54%;
+  min-width: 0;
+}
+.parallel-columns .col-ru,
+.parallel-columns .col-ru p {
+  font-family: "Jost", system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  text-indent: 1.5em;
+  margin: 0;
+}
+
+/* EN */
+.parallel-columns .col-en {
+  width: 46%;
+  min-width: 0;
+}
+.parallel-columns .col-en,
+.parallel-columns .col-en p {
+  font-family: "Jost", system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  text-indent: 1.3em;
+  margin: 0;
+}
+
+/* Когда оригинал скрыт */
+.parallel-block.parallel-closed .col-en { display: none; }
+.parallel-block.parallel-closed .col-ru { width: 100%; }
+
+/* =========================================================
+   PARALLEL NAV (prev | toggle+next) — ВНУТРИ серого блока
+   ВАЖНО: тут НЕ используем col-ru/col-en
+   ========================================================= */
+.parallel-nav-grid {
+  display: grid;
+  grid-template-columns: 54% 46%;
+  gap: var(--gap);
+  align-items: center;
+  margin: 0 0 0.75rem 0;
+}
+
+/* Левая часть (prev) прижата к левому краю 1-й колонки */
+.parallel-nav-grid .nav-ru {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Правая часть: toggle слева, next справа во 2-й колонке */
+.parallel-nav-grid .nav-en {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Общий вид ссылок навигации */
+.parallel-nav-grid .chapter-nav-link {
+  font-family: "Inter", system-ui, sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.parallel-nav-grid .chapter-nav-link:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Toggle в навигации — тем же стилем */
+.parallel-nav-grid .parallel-toggle {
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   DISCLAIMER + FOOTER
+   ========================================================= */
+.disclaimer {
+  font-size: 0.95rem;
+  color: #444;
+  background: #fff8e6;
+  padding: 0.8rem;
+  border: 1px solid #f2e2b9;
+  border-radius: 8px;
+}
+
+.footer {
+  color: #777;
+  font-size: 0.95rem;
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width: 820px) {
+  .site-header {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "logo title"
+      "search search";
+  }
+  .site-header__logo { grid-area: logo; }
+  .site-header__title { grid-area: title; }
+  .site-header__search {
+    grid-area: search;
+    justify-self: stretch;
+  }
+
+  .chapters-horizontal > ul {
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .parallel-columns {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .parallel-columns .col-ru,
+  .parallel-columns .col-en {
+    width: 100%;
+  }
+
+  .parallel-nav-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .parallel-nav-grid .nav-en {
+    justify-content: space-between;
   }
 }
