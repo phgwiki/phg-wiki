@@ -778,12 +778,14 @@ sup { font-size: 0.7em; }
 }
 
 /* Общий вид ссылок навигации */
-.parallel-nav-grid .chapter-nav-link {
+.parallel-nav-grid .nav-en .chapter-nav-link {
   font-family: "Inter", system-ui, sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
   color: var(--muted);
   white-space: nowrap;
+  flex: 0 0 auto;
+  margin-left: auto;        /* дополнительная страховка */
 }
 .parallel-nav-grid .chapter-nav-link:hover {
   color: #000;
