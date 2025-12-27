@@ -29,30 +29,54 @@ hr { border: none; border-top: 1px solid #eee; margin: 2rem 0; }
   background: #fafafa;
 }
 
+/* Панель управления в сером блоке */
 .parallel-controls {
-  display: flex;
+  display: grid;
+  grid-template-columns: 54% 46%;
   align-items: center;
-  justify-content: space-between;
-  gap: 1.2rem;
   margin-bottom: 0.6rem;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: #666;
+}
+/* Пустая первая колонка — сохраняет сетку */
+.parallel-controls::before {
+  content: "";
 }
 
+
+/* Навигация — правый край второй колонки */
 .parallel-controls .chapter-nav {
+  grid-column: 2;
   justify-self: end;
   display: flex;
-  gap: 1rem;
-  font-family: "Inter", system-ui, sans-serif;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  color: #666;
+  gap: 1.2rem;
 }
 
+/* Ссылки навигации */
+.parallel-controls .chapter-nav-link {
+  color: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Hover — аккуратный */
+.parallel-controls .chapter-nav-link:hover,
+.parallel-toggle:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+/* Toggle — левый край второй колонки */
 .parallel-toggle {
-  font-family: "Inter", system-ui, sans-serif;
+  grid-column: 2;
   justify-self: start;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
-  color: #666;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  padding: 0;
 }
 
 .parallel-toggle:hover {
