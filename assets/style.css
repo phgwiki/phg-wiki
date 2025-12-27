@@ -700,9 +700,8 @@ sup { font-size: 0.7em; }
 
 /* Кнопка toggle */
 .parallel-toggle {
-  font-family: "Inter", system-ui, sans-serif;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: var(--muted);
   border: 0;
   background: transparent;
@@ -710,7 +709,7 @@ sup { font-size: 0.7em; }
   cursor: pointer;
   white-space: nowrap;
 }
-.parallel-toggle:hover { color: #000; text-decoration: underline; }
+.parallel-toggle:hover { color: #000;  }
 
 /* Колонки параллельного текста */
 .parallel-columns {
@@ -722,6 +721,7 @@ sup { font-size: 0.7em; }
 .parallel-columns .col-ru {
   width: 54%;
   min-width: 0;
+  border:1px;
 }
 .parallel-columns .col-ru,
 .parallel-columns .col-ru p {
@@ -737,6 +737,7 @@ sup { font-size: 0.7em; }
 .parallel-columns .col-en {
   width: 46%;
   min-width: 0;
+  border:1px;
 }
 .parallel-columns .col-en,
 .parallel-columns .col-en p {
@@ -764,6 +765,7 @@ sup { font-size: 0.7em; }
   margin: 0 0 0.75rem 0;
   width: 100%;
   box-sizing: border-box;
+  border:1px;
 }
 
 /* Левая часть (prev) прижата к левому краю 1-й колонки */
@@ -771,6 +773,7 @@ sup { font-size: 0.7em; }
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  border:1px;
 }
 
 /* Правая часть: toggle слева, next справа во 2-й колонке */
@@ -782,7 +785,7 @@ sup { font-size: 0.7em; }
   margin-right: 0;
   padding-right: 0;
   justify-content: space-between; /* toggle слева, next справа */
-  border: 1px;
+  border:1px;
 }
 
 /* Общий вид ссылок навигации */
@@ -794,7 +797,6 @@ sup { font-size: 0.7em; }
 }
 .parallel-nav-grid .chapter-nav-link:hover {
   color: #000;
-  text-decoration: underline;
 }
 
 
