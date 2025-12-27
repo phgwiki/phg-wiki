@@ -613,7 +613,6 @@ sup { font-size: 0.7em; }
 }
 
 .chapters-horizontal .menu-group > span {
-  text-transform: uppercase;
   color: #333;
   cursor: pointer;
   display: inline-block;
@@ -783,8 +782,6 @@ sup { font-size: 0.7em; }
   font-family: "Inter", system-ui, sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
-  letter-spacing: 0.10em;
-  text-transform: uppercase;
   color: var(--muted);
   white-space: nowrap;
 }
@@ -793,11 +790,7 @@ sup { font-size: 0.7em; }
   text-decoration: underline;
 }
 
-/* Toggle в навигации — тем же стилем */
-.parallel-nav-grid .parallel-toggle {
-  letter-spacing: 0.10em;
-  text-transform: uppercase;
-}
+
 
 /* =========================================================
    DISCLAIMER + FOOTER
