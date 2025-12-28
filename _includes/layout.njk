@@ -27,6 +27,7 @@
 
     <div class="site-header__search">
       <div id="search" class="search"></div>
+      <div id="search-results" class="search-results"></div>
     </div>
   </div>
       <nav class="chapters-horizontal">
@@ -192,13 +193,69 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  if (!window.PagefindUI) return;
+document.addEventListener("DOMContentLoaded", async () => {
+  // pagefind должен лежать в /pagefind/ (как у тебя в _site/pagefind/)
+  // Если у тебя он в /assets/pagefind/ — скажи, подстрою.
+  const resultsEl = document.querySelector("#search-results");
+  const inputHost = document.querySelector("#search");
 
-  new PagefindUI({
-    element: "#search",
-    showSubResults: true,
-    pageSize: 20
+  if (!resultsEl || !inputHost || !window.pagefind) return;
+
+  // простой инпут
+  inputHost.innerHTML = `
+    <input class="search-input" type="search" placeholder="Поиск по тексту…" />
+  `;
+  const input = inputHost.querySelector("input");
+
+  let last = 0;
+
+  async function run(q) {
+    const stamp = ++last;
+    q = (q || "").trim();
+
+    resultsEl.innerHTML = q ? `<div class="search-status">Ищу: ${q}</div>` : "";
+    if (!q) return;
+
+    const r = await window.pagefind.search(q);
+    if (stamp !== last) return;
+
+    // Подгружаем данные по первым N результатам
+    const pages = await Promise.all(
+      r.results.slice(0, 20).map(async (res) => {
+        const data = await res.data();
+        return data;
+      })
+    );
+
+    // Рендер
+    resultsEl.innerHTML = pages.map((p) => {
+      const volume = p.meta?.volume || "";
+      const chapter = p.meta?.chapter || p.title || "";
+      const excerpt = p.excerpt || ""; // уже с <mark> подсветкой
+      // если Pagefind отдаст якоря — попробуем прыгать “внутрь”
+      const anchor = (p.anchors && p.anchors[0] && p.anchors[0].id) ? `#${p.anchors[0].id}` : "";
+      const url = (p.url || "") + anchor;
+
+      return `
+        <article class="search-card">
+          <div class="search-meta">
+            <span class="search-volume">${volume}</span>
+            <span class="search-sep">·</span>
+            <span class="search-chapter">${chapter}</span>
+          </div>
+          <a class="search-link" href="${url}">
+            <div class="search-excerpt">${excerpt}</div>
+          </a>
+        </article>
+      `;
+    }).join("");
+  }
+
+  // debounce
+  let t;
+  input.addEventListener("input", () => {
+    clearTimeout(t);
+    t = setTimeout(() => run(input.value), 150);
   });
 });
 </script>

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/v2ch8.md",
+                "file": "src/v1ch1.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "v2ch8"
+              "title": "v1ch1"
             }
           }
         ]
@@ -169,8 +169,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0b1a6fc1633808ef",
+  "active": "a496153e4fffe96a",
   "lastOpenFiles": [
+    "src/v2ch8.md",
     "_site/pagefind/pagefind-ui.js",
     "_site/pagefind/pagefind-ui.css",
     "_site/assets/pagefind/pagefind-ui.js",
@@ -181,7 +182,6 @@
     "_site/pagefind/wasm.unknown.pagefind",
     "_site/pagefind/pagefind-modular-ui.css",
     "_site/pagefind/pagefind-modular-ui.js",
-    "_site/pagefind/pagefind-highlight.js",
     "node_modules/fsevents/README.md",
     "src/v2ch7.md",
     "src/v2ch6.md",
