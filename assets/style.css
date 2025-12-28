@@ -568,7 +568,7 @@ sup { font-size: 0.7em; }
 /* Pagefind input */
 #search .pagefind-ui__search-input {
   width: 100%;
-  max-width: 260px;
+  max-width: none;
   padding: 6px 10px;
   border-radius: 6px;
   font-size: 16px;
@@ -577,6 +577,7 @@ sup { font-size: 0.7em; }
   background: #fafafa;
   color: #111;
   box-shadow: none;
+  box-sizing: border-box;
 }
 
 .pagefind-ui__search-input:focus {
@@ -596,19 +597,22 @@ sup { font-size: 0.7em; }
   right: 0;
   left: auto;
   top: calc(100% + 8px);
-  width: min(720px, calc(100vw - 24px));
+  width: 100%;
+  min-width: 320px;                 /* чтобы не было “узко” */
+  max-width: min(720px, 92vw);      /* но и не гигант */
   max-height: min(70vh, 640px);
+  z-index: 3000;
   overflow: auto;
   background: #fff;
   border: 1px solid rgba(0,0,0,0.10);
   border-radius: 14px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.10);
   padding: 12px 14px;
-  z-index: 2000;
 }
 
 /* Важно: якорь абсолютного позиционирования — сам #search */
-#search { position: relative; }
+#search { position: relative; 
+width: min(360px, 100%);}
 /* =========================================================
    MAIN NAV (dropdowns)
    ========================================================= */
