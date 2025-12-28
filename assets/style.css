@@ -465,7 +465,6 @@ body {
   max-width: var(--max);
   margin: 0 auto;
   padding: 0 10px 0 10px;
-border: dashed 1px;
 }
 
 /* Ссылки */
@@ -535,7 +534,6 @@ sup { font-size: 0.7em; }
   align-items: center;
   gap: 10px;
   padding: 12px 0 0;
-  border: dashed 1px;
 }
 
 .site-header__logo img { display: block; }

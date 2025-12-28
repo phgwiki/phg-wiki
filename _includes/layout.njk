@@ -78,7 +78,7 @@
       
     </header>
 
-    <main class="container content">
+    <main class="container content" data-pagefind-body>
       {# =========================
    AUTO PREV / NEXT (ТОЛЬКО ДЛЯ ГЛАВ)
    Требует в frontmatter:
@@ -111,7 +111,7 @@
   {% endfor %}
 
   {% if isChapter and found %}
-<div class="parallel-nav-grid" data-pagefind-body>
+<div class="parallel-nav-grid">
   <div class="nav-ru">
     {% if prev %}
       <a class="chapter-nav-link" href="{{ prev.url }}">← {{ prev.data.title }}</a>
@@ -193,9 +193,11 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    new PagefindUI({
-      element: "#search",
-      showSubResults: true,
+  new PagefindUI({
+  element: "#search",
+  showSubResults: true,
+  pageSize: 20
+});
     });
   });
 </script>
