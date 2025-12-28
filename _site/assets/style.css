@@ -557,8 +557,9 @@ sup { font-size: 0.7em; }
 
 /* Поиск в шапке */
 .site-header__search {
-  justify-self: end;
-  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 /* Pagefind input */
