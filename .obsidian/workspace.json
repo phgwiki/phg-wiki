@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/v1ch1.md",
+                "file": "src/v2ch8.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "v1ch1"
+              "title": "v2ch8"
             }
           }
         ]
@@ -169,20 +169,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a496153e4fffe96a",
+  "active": "0b1a6fc1633808ef",
   "lastOpenFiles": [
-    "src/v2ch8.md",
-    "_site/pagefind/pagefind-ui.js",
-    "_site/pagefind/pagefind-ui.css",
-    "_site/assets/pagefind/pagefind-ui.js",
-    "_site/assets/pagefind/pagefind-ui.css",
-    "_site/assets/pagefind",
-    "_site/assets/untitled folder",
-    "_site/pagefind/pagefind-entry.json",
-    "_site/pagefind/wasm.unknown.pagefind",
-    "_site/pagefind/pagefind-modular-ui.css",
-    "_site/pagefind/pagefind-modular-ui.js",
-    "node_modules/fsevents/README.md",
     "src/v2ch7.md",
     "src/v2ch6.md",
     "src/v2ch5.md",
@@ -205,6 +193,18 @@
     "src/v1ch3.md",
     "src/v1ch2.md",
     "src/v1ch1.md",
+    "src/v2ch8.md",
+    "_site/pagefind/pagefind-ui.js",
+    "_site/pagefind/pagefind-ui.css",
+    "_site/assets/pagefind/pagefind-ui.js",
+    "_site/assets/pagefind/pagefind-ui.css",
+    "_site/assets/pagefind",
+    "_site/assets/untitled folder",
+    "_site/pagefind/pagefind-entry.json",
+    "_site/pagefind/wasm.unknown.pagefind",
+    "_site/pagefind/pagefind-modular-ui.css",
+    "_site/pagefind/pagefind-modular-ui.js",
+    "node_modules/fsevents/README.md",
     "src/intro1.md",
     "_site/assets/logo_.png",
     "_site/assets/logo.png",
