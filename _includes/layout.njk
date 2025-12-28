@@ -192,14 +192,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
+  if (!window.PagefindUI) return;
+
   new PagefindUI({
-  element: "#search",
-  showSubResults: true,
-  pageSize: 20
-});
-    });
+    element: "#search",
+    showSubResults: true,
+    pageSize: 20
   });
+});
 </script>
   </body>
 </html>
