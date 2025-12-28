@@ -207,7 +207,7 @@
     
   </div>
 
-  <div class="nav-en parallel-nav-right">
+  <div class="nav-en">
     
 
     
@@ -491,6 +491,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    if (!window.PagefindUI) {
+      console.warn("PagefindUI not loaded (check /pagefind/pagefind-ui.js)");
+      return;
+    }
+    new PagefindUI({
+      element: "#search",
+      showSubResults: true,
+    });
+  });
 </script>
   </body>
 </html>
