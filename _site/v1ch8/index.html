@@ -8,8 +8,7 @@
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap&subset=cyrillic,cyrillic-ext,latin">
     <link rel="stylesheet" href="/assets/style.css">
-    <link rel="stylesheet" href="/assets/pagefind/pagefind-ui.css">
-    <script src="/assets/pagefind/pagefind-ui.js"></script>
+    <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
   </head>
   <body>
     <header class="container">
@@ -23,10 +22,6 @@
     <div class="site-header__title">
       <div class="site-title"><a href="/">параллельный текст с аннотациями</a></div>
       <div class="tagline">для исследования и обучения</div>
-    </div>
-
-    <div class="site-header__search">
-      <div id="search" class="search"></div>
     </div>
   </div>
       <nav class="chapters-horizontal">
@@ -113,7 +108,10 @@
           </li>
         </ul>
       </nav>
-      
+    <div class="site-header__search">
+      <div id="search" class="search"></div>
+      <div id="search-results" class="search-results"></div>
+    </div>
     </header>
 
     <main class="container content" data-pagefind-body>
@@ -234,7 +232,7 @@
       <p>Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth
 Часть 2: Реальность, человеческая природа и общество/ Part 2: Reality, Human Nature, and Society
 Глава VIII «Mind», «тело» и «внешний мир»/ Chapter III “Mind,” “Body,” and “External World”</p>
- <div class="parallel-block" data-pagefind-body>
+ <div class="parallel-block">
 	 <div class="parallel-controls"><button class="parallel-toggle" data-parallel-toggle>Скрыть оригинал ×</button>
 	 </div>
 	 <div class="parallel-columns">
@@ -293,15 +291,64 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-  new PagefindUI({
-  element: "#search",
-  showSubResults: true,
-  pageSize: 20
-});
-    });
+<script type="module">
+document.addEventListener("DOMContentLoaded", async () => {
+  const resultsEl = document.querySelector("#search-results");
+  const inputHost = document.querySelector("#search");
+  if (!resultsEl || !inputHost) return;
+
+  const mod = await import("/pagefind/pagefind.js");
+  const pagefind = mod.default ?? mod;   // <-- ВАЖНО
+  if (pagefind.init) await pagefind.init();
+
+  inputHost.innerHTML = `
+    <input class="search-input" type="search" placeholder="Поиск по тексту…" />
+  `;
+  const input = inputHost.querySelector("input");
+
+  let last = 0;
+
+  async function run(q) {
+    const stamp = ++last;
+    q = (q || "").trim();
+    resultsEl.innerHTML = q ? `<div class="search-status">Ищу: ${q}</div>` : "";
+    if (!q) return;
+
+    const r = await pagefind.search(q);
+    if (stamp !== last) return;
+
+    const pages = await Promise.all(
+      (r.results || []).slice(0, 20).map((res) => res.data())
+    );
+
+    resultsEl.innerHTML = pages.map((p) => {
+      const volume = p.meta?.volume || "";
+      const chapter = p.meta?.chapter || p.title || "";
+      const excerpt = p.excerpt || "";
+      const anchor = p.anchors?.[0]?.id ? `#${p.anchors[0].id}` : "";
+      const url = (p.url || "") + anchor;
+
+      return `
+        <article class="search-card">
+          <div class="search-meta">
+            <span class="search-volume">${volume}</span>
+            <span class="search-sep">·</span>
+            <span class="search-chapter">${chapter}</span>
+          </div>
+          <a class="search-link" href="${url}">
+            <div class="search-excerpt">${excerpt}</div>
+          </a>
+        </article>
+      `;
+    }).join("");
+  }
+
+  let t;
+  input.addEventListener("input", () => {
+    clearTimeout(t);
+    t = setTimeout(() => run(input.value), 150);
   });
+});
 </script>
   </body>
 </html>
