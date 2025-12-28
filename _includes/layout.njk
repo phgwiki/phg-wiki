@@ -9,7 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap&subset=cyrillic,cyrillic-ext,latin">
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="stylesheet" href="/pagefind/pagefind-ui.css">
-    <script src="/pagefind/pagefind-ui.js"></script>
   </head>
   <body>
     <header class="container">
@@ -192,16 +191,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
-<script>
+<script type="module">
 document.addEventListener("DOMContentLoaded", async () => {
-  // pagefind должен лежать в /pagefind/ (как у тебя в _site/pagefind/)
-  // Если у тебя он в /assets/pagefind/ — скажи, подстрою.
   const resultsEl = document.querySelector("#search-results");
   const inputHost = document.querySelector("#search");
+  if (!resultsEl || !inputHost) return;
 
-  if (!resultsEl || !inputHost || !window.pagefind) return;
+  const mod = await import("/pagefind/pagefind.js");
+  const pagefind = mod.default ?? mod;   // <-- ВАЖНО
+  if (pagefind.init) await pagefind.init();
 
-  // простой инпут
   inputHost.innerHTML = `
     <input class="search-input" type="search" placeholder="Поиск по тексту…" />
   `;
@@ -212,28 +211,21 @@ document.addEventListener("DOMContentLoaded", async () => {
   async function run(q) {
     const stamp = ++last;
     q = (q || "").trim();
-
     resultsEl.innerHTML = q ? `<div class="search-status">Ищу: ${q}</div>` : "";
     if (!q) return;
 
-    const r = await window.pagefind.search(q);
+    const r = await pagefind.search(q);
     if (stamp !== last) return;
 
-    // Подгружаем данные по первым N результатам
     const pages = await Promise.all(
-      r.results.slice(0, 20).map(async (res) => {
-        const data = await res.data();
-        return data;
-      })
+      (r.results || []).slice(0, 20).map((res) => res.data())
     );
 
-    // Рендер
     resultsEl.innerHTML = pages.map((p) => {
       const volume = p.meta?.volume || "";
       const chapter = p.meta?.chapter || p.title || "";
-      const excerpt = p.excerpt || ""; // уже с <mark> подсветкой
-      // если Pagefind отдаст якоря — попробуем прыгать “внутрь”
-      const anchor = (p.anchors && p.anchors[0] && p.anchors[0].id) ? `#${p.anchors[0].id}` : "";
+      const excerpt = p.excerpt || "";
+      const anchor = p.anchors?.[0]?.id ? `#${p.anchors[0].id}` : "";
       const url = (p.url || "") + anchor;
 
       return `
@@ -251,7 +243,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     }).join("");
   }
 
-  // debounce
   let t;
   input.addEventListener("input", () => {
     clearTimeout(t);
