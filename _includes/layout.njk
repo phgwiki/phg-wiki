@@ -13,7 +13,7 @@
   </head>
   <body>
     <header class="container">
-  <div class="site-header">
+  <div class="site-header" data-pagefind-ignore>
     <div class="site-header__logo">
       <a href="/" aria-label="На главную">
         <img src="/assets/logo.png" alt="PHG" height="150">
@@ -78,7 +78,7 @@
       
     </header>
 
-    <main class="container content" data-pagefind-body>
+    <main class="container content">
       {# =========================
    AUTO PREV / NEXT (ТОЛЬКО ДЛЯ ГЛАВ)
    Требует в frontmatter:
@@ -111,7 +111,7 @@
   {% endfor %}
 
   {% if isChapter and found %}
-<div class="parallel-nav-grid">
+<div class="parallel-nav-grid" data-pagefind-body>
   <div class="nav-ru">
     {% if prev %}
       <a class="chapter-nav-link" href="{{ prev.url }}">← {{ prev.data.title }}</a>
@@ -148,7 +148,7 @@
 
       <hr>
 
-      <section class="disclaimer">
+      <section class="disclaimer" data-pagefind-ignore>
         <p>{{ site.disclaimer_en }}</p>
         <p>{{ site.disclaimer_ru }}</p>
       </section>
@@ -158,7 +158,7 @@
       </section>
     </main>
 
-    <footer class="container footer">
+    <footer class="container footer" data-pagefind-ignore>
       <p>© GTTL Translators, 2025 · Research & Educational Use Only</p>
     </footer>
 
