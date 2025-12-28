@@ -171,6 +171,8 @@
   },
   "active": "0b1a6fc1633808ef",
   "lastOpenFiles": [
+    "_site/pagefind/pagefind-ui.js",
+    "_site/pagefind/pagefind-ui.css",
     "_site/assets/pagefind/pagefind-ui.js",
     "_site/assets/pagefind/pagefind-ui.css",
     "_site/assets/pagefind",
@@ -178,8 +180,6 @@
     "_site/pagefind/pagefind-entry.json",
     "_site/pagefind/wasm.unknown.pagefind",
     "_site/pagefind/pagefind-modular-ui.css",
-    "_site/pagefind/pagefind-ui.js",
-    "_site/pagefind/pagefind-ui.css",
     "_site/pagefind/pagefind-modular-ui.js",
     "_site/pagefind/pagefind-highlight.js",
     "node_modules/fsevents/README.md",
