@@ -531,7 +531,7 @@ sup { font-size: 0.7em; }
 .site-header {
   display: grid;
 grid-template-columns:
-    minmax(180px, 260px)   /* логотип */
+    minmax(260px, 260px)   /* логотип */
     minmax(420px, 1.6fr)  /* ← СРЕДНЯЯ КОЛОНКА */
     minmax(240px, 1fr);   /* поиск */
   align-items: center;
