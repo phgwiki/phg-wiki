@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/v2ch8.md",
+                "file": "src/intro1.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "v2ch8"
+              "title": "intro1"
             }
           }
         ]
@@ -169,8 +169,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0b1a6fc1633808ef",
+  "active": "a496153e4fffe96a",
   "lastOpenFiles": [
+    "src/intro2.md",
+    "src/intro1.md",
+    "src/v1ch6.md",
+    "src/v1ch1.md",
+    "src/v2ch8.md",
     "src/v2ch7.md",
     "src/v2ch6.md",
     "src/v2ch5.md",
@@ -187,13 +192,10 @@
     "src/v1ch9.md",
     "src/v1ch8.md",
     "src/v1ch7.md",
-    "src/v1ch6.md",
     "src/v1ch5.md",
     "src/v1ch4.md",
     "src/v1ch3.md",
     "src/v1ch2.md",
-    "src/v1ch1.md",
-    "src/v2ch8.md",
     "_site/pagefind/pagefind-ui.js",
     "_site/pagefind/pagefind-ui.css",
     "_site/assets/pagefind/pagefind-ui.js",
@@ -205,10 +207,8 @@
     "_site/pagefind/pagefind-modular-ui.css",
     "_site/pagefind/pagefind-modular-ui.js",
     "node_modules/fsevents/README.md",
-    "src/intro1.md",
     "_site/assets/logo_.png",
     "_site/assets/logo.png",
-    "node_modules/@pagefind/darwin-arm64/README.md",
     "assets/logo.png",
     "assets/logo_.png",
     "assets/phg_logo.png",
