@@ -16,12 +16,12 @@ title: Introduction II
  	В основу этой книги легла рукопись Фредерика Саломона Перлза. Ее содержание развил и переработал Пол Гудман ([Том I](/v1ch1/)), а Ральф Хефферлайн воплотил его в практическом применении ([Том II](/v2ch1/)). Однако в своем нынешнем виде она действительно результат совместных усилий трех авторов. Начавшись как труд одного человека, книга в итоге стала работой троих — с равной ответственностью каждого.
 
  	Нами двигала общая цель: создать теорию и метод, способные расширить рамки и сферу применения психотерапии. Между нами было много разногласий, но высказывая их, а не скрывая из вежливости, мы часто приходили к решениям, которые никто из нас по отдельности не смог бы предвидеть. В книге сохранилось много идей исходной рукописи, но еще столько же добавилось благодаря совместным усилиям трех авторов. И, что еще важнее, идеи приобрели новый смысл в целостном контексте уже после завершения работы.
-
- 	* * *
+ 	
+	* * *
 
  	Открытия Гештальтпсихологии оказали плодотворное влияние на подходы к искусству и образованию. Труды Вертгеймера, Кёлера, Левина и других ученых ныне получили полное признание в академической психологии. Однако, следуя за интересом к бихевиоризму, который преимущественно сосредоточен на моторных аспектах, академическое сообщество сейчас склонно переоценивать перцептивную составляющую Гештальта. Великолепная работа Гольдштейна в области нейропсихиатрии до сих пор не заняла того места в современной науке, которое она заслуживает. До сих пор не было попытки применить Гештальтизм как единственную теорию, которая адекватно и последовательно объясняет психологию нормы и патологии. Настоящая работа является попыткой заложить основу для такого применения.
 
- 	* * *
+	* * *
 
  	Невозможно ни написать, ни глубоко осмыслить эту книгу, не владея теоретической установкой, которая пронизывает её содержание и метод. Поэтому читатель оказывается перед невыполнимой задачей: чтобы понять книгу, он должен обладать "Гештальтистским" складом ума, а чтобы им овладеть, нужно понять книгу. К счастью, эта трудность вполне преодолима, поскольку подобный склад ума не является изобретением авторов. Напротив, мы считаем, что мировоззрение Гештальта — это изначальный, неискаженный, естественный подход к жизни, то есть к мышлению, действиям, чувствам человека. Обычный человек, который растет в атмосфере, полной расщеплений, теряет Целостность и Согласованность. Чтобы вновь собраться воедино, ему необходимо излечить дуализм личности, мышления и языка. Он привыкает думать о контрастах: инфантильном и зрелом, теле и разуме, организме и среде, себе и реальности, — как о противопоставленных сущностях. Целостный взгляд, способный преодолеть такой дуалистический подход, погребен, но не уничтожен и, как мы намерены показать, может быть возрожден с огромной пользой.
 
@@ -39,7 +39,7 @@ title: Introduction II
 
  	Осознанность всегда сопровождается формированием Гештальта. Мы видим не три изолированные точки, а строим из них треугольник. Создание завершенных и целостных Гештальтов — необходимое условие для психического благополучия и личностного роста. Лишь завершенный Гештальт способен интегрироваться в целостный организм как автоматически действующий механизм (рефлекс). Любой незавершенный Гештальт представляет собой "незавершенную ситуацию", которая требует внимания и мешает формированию какого-либо нового, живого Гештальта. И тогда вместо роста и развития мы обнаруживаем застой и регресс.
 
- 	* * *
+	* * *
 
  	Конфигурация, структура, тема, структурная связь (Коржибски) или осмысленно организованное целое наиболее близки к исконно немецкому слову *Gestalt*, для которого не существует точного английского перевода. Вот пример из лингвистики: *pal* и *lap* содержат одни и те же элементы, но их значение зависит от порядка букв в их Гештальтах. Опять же, *bridge* имеет значение "карточная игра" или "конструкция, соединяющая два берега реки". На этот раз значение зависит от контекста, в котором появляется слово *bridge*. Сиреневый цвет кажется голубоватым на красном фоне, и красноватым — на синем. В гештальтпсихологии контекст, в котором появляется элемент, называется "фоном", на котором выделяется "фигура".
 
@@ -84,11 +84,11 @@ This book began as a manuscript written by Frederick S. Perls. The material was 
 
 We have had in common one purpose: to develop a theory and method that would extend the limits and applicability of psychotherapy. Our differences were many, but by bringing them forth rather than politely concealing them we many times arrived at solutions that none of us could have anticipated. Many of the ideas in the original manuscript have been retained in this book, but just as many have been added in the cooperative effort of the three authors in the writing of the book, and more importantly, they take on a new meaning in the context of the book as it has been completed.
 
-* * *
+	* * *
 
 The insights of Gestalt Psychology have been fruitful in the approach to art and education; and in academic psychology the work of Wertheimer, Köhler, Lewin, etc., is now fully recognized; however, following the interest in behaviorism, which is for the most part motorically oriented, academic circles now overemphasize the perceptual aspect of the Gestalt. The magnificent work of Goldstein in neuropsychiatry still has not found the place in modern science that it deserves. The full application of Gestaltism in psychotherapy as the only theory that adequately and consistently covers both normal and abnormal psychology has not yet been undertaken. The present work is an attempt to lay the foundation for that.
 
-* * *
+	* * *
 
 Indispensable — both for the writing and the thorough understanding of this book — is an attitude which as a theory actually permeates the content and method of the book. Thus the reader is apparently confronted with an impossible task: to understand the book he must have the "Gestaltist" mentality, and to acquire it he must understand the book. Fortunately, the difficulty is far from being insurmountable, for the authors have not invented such a mentality. On the contrary, we believe that the Gestalt outlook is the original, undistorted, natural approach to life, that is, to man's thinking, acting, feeling. The average person, having been raised in an atmosphere full of splits, has lost his Wholeness, his Integrity. To come together again he has to heal the dualism of his person, of his thinking, and of his language. He is accustomed to thinking of contrasts — of infantile and mature, of body and mind, organism and environment, self and reality, as if they were opposing entities. The unitary outlook which can dissolve such a dualistic approach is buried but not destroyed and, as we intend to show, can be regained with wholesome advantage.
 
@@ -106,7 +106,7 @@ Excitement seems to be linguistically a good term. It covers the physiological e
 
 Gestalt formation always accompanies awareness. We do not see three isolated points, we make a triangle out of them. The formation of complete and comprehensive Gestalten is the condition of mental health and growth. Only the completed Gestalt can be organized as an automatically functioning unit (reflex) in the total organism. Any incomplete Gestalt represents an "unfinished situation" that clamors for attention and interferes with the formation of any novel, vital Gestalt. Instead of growth and development we then find stagnation and regression.
 
- * * * 
+	* * *
 
 Configuration, structure, theme, structural relationship (Korzybski) or meaningful organized whole most closely approximate the originally German word Gestalt, for which there is no exact English equivalent. As a linguistic example: pal and lap contain the same elements, but the meaning is dependent upon the order of the letters within their Gestalt. Again, bridge has the meaning of a game of cards or a structure joining two river banks. This time the meaning depends upon the context in which "bridge" appears. The color lilac looks bluish against a red background, red against a blue background. The context in which an element appears is called in Gestalt psychology the "ground" against which the "figure" stands out.
 
@@ -126,7 +126,7 @@ Again a Gestaltist outlook comes to our rescue. In an earlier book (Perls: Ego, 
 
 Now we again have a unitary principle to work with. The neurotic's survival outlook (even if it appears foolish to the outsider) requires that he become tense, that he censor, that he defeat the analyst, etc. This is his dominant need, but he has forgotten how he organized it; it has become routine. His intentions not to censor are as efficient as an alcoholic's New Year's resolution. The routine has to become once more a fully aware, new, exciting need in order to regain the ability to cope with unfinished situations. Instead of pulling means out of the unconscious we work on the uppermost surface. The bother is that the patient (and too often the therapist himself) takes this surface for granted. The way the patient talks, breathes, moves, censors, scorns, looks for causes, etc. — this to him is obvious, is constitution, is nature. But actually it is the expression of his dominant needs, e.g., to be victorious, good and impressive. It is precisely in the obvious that we find his unfinished personality; and only by tackling the obvious, by melting the petrified, by differentiating between blah-blah and real concern, between the obsolete and the creative, can the patient regain the liveliness of the elastic figure/ground relation. In this process, which is the process of growth and maturing, the patient experiences and develops his self, and we intend to show how he comes to this "self " via the means at his disposal: his available amount of awareness in experimental situations.
 
-* * *
+	* * *
 
 The greatest value in the Gestalt approach perhaps lies in the insight that the whole determines the parts, which contrasts with the previous assumption that the whole is merely the total sum of its elements. The therapeutic situation, for instance, is more than just a statistical event of a doctor plus a patient. It is a meeting of a doctor and patient. If the doctor is rigid and insensitive to the specific requirements of the ever-changing therapeutic situation, he will not be a good therapist. He might be a bully or a businessman or a dogmatist, but he is not a therapist if he refuses to be a part of the ongoing processes of the psychiatric situation. Likewise, the patient's behavior is dictated by many variables of the interview, and only the 100% rigid or the insane (oblivious of the context in which they operate) will behave in the consulting room as they do outside.
 
