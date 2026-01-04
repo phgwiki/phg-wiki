@@ -814,3 +814,38 @@ text-decoration: none;
   font-size: 0.95rem;
 }
 
+
+  @media (max-width: 860px) {
+  .container {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  /* чтобы длинные слова/термины не разрывали верстку */
+  .content, .parallel-block {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+    .chapters-horizontal > ul {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 6px;
+  }
+
+  .chapters-horizontal > ul > li {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+    .site-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-items: start;
+  }
+
+  .site-header__logo img { height: 84px; } /* было 150 */
+  .site-header__search { width: 100%; }
+}
+
