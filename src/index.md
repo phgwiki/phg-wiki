@@ -4,9 +4,9 @@ title: Home — PHG Translation Project
 ---
 
 
-# Проект перевода и аннотирования ПХГ 
+# Проект перевода и коллективного комментирования PHG**
 
-> Здесь вы найдете оригинальный текст и перевод для **"Gestalt Therapy: Excitement and Growth in Human Personality" Frederick S. Perls, Ralph F. Hefferline, Paul Goodman (1951)**  в том виде, как он был издан в 1994 году издательством Julian Press.   
+Здесь вы найдете оригинальный текст и демо перевода на русский книги **"Gestalt Therapy: Excitement and Growth in Human Personality" Frederick S. Perls, Ralph F. Hefferline, Paul Goodman (1951)**  в том виде, как она была издана в 1994 году издательством [Gestalt Journal Press](https://openlibrary.org/works/OL6155518W/Gestalt_Therapy?edition=key%3A/books/OL23109145M).   
 
 ## Содержание
 - [Введение к изданию 1994 Миллера и Фрома](/intro1/)
