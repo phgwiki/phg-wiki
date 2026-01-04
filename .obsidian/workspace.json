@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/about.md",
+                "file": "src/intro2.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "about"
+              "title": "intro2"
             }
           }
         ]
@@ -171,13 +171,14 @@
   },
   "active": "0b1a6fc1633808ef",
   "lastOpenFiles": [
+    "src/intro1.md",
+    "src/v1ch1.md",
+    "src/about.md",
     "src/index.md",
     "src/v1ch4.md",
     "src/v1ch3.md",
     "src/v1ch2.md",
-    "src/v1ch1.md",
     "src/intro2.md",
-    "src/intro1.md",
     "src/v1ch6.md",
     "src/v2ch8.md",
     "src/v2ch7.md",
@@ -196,7 +197,6 @@
     "src/v1ch9.md",
     "src/v1ch8.md",
     "src/v1ch7.md",
-    "src/v1ch5.md",
     "_site/pagefind/pagefind-ui.js",
     "_site/pagefind/pagefind-ui.css",
     "_site/assets/pagefind/pagefind-ui.js",
