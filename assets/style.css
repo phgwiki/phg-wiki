@@ -826,6 +826,9 @@ text-decoration: none;
     overflow-wrap: anywhere;
     word-break: break-word;
   }
+  .chapters-horizontal {
+  background: #000;
+}
     .chapters-horizontal > ul {
     display: flex;
     gap: 10px;
@@ -838,6 +841,11 @@ text-decoration: none;
     flex: 0 0 auto;
     white-space: nowrap;
   }
+  .chapters-horizontal a,
+.chapters-horizontal span {
+  color: #fff;
+  text-decoration: none;
+}
     .site-header {
     display: grid;
     grid-template-columns: 1fr;
