@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/v2ch8.md",
+                "file": "src/index.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "v2ch8"
+              "title": "index"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "0b1a6fc1633808ef",
   "lastOpenFiles": [
+    "src/v2ch8.md",
     "src/v2ch7.md",
     "src/v2ch6.md",
     "src/v2ch5.md",
@@ -196,7 +197,6 @@
     "src/about.md",
     "src/intro2.md",
     "src/intro1.md",
-    "src/index.md",
     "_site/pagefind/pagefind-ui.js",
     "_site/pagefind/pagefind-ui.css",
     "_site/assets/pagefind/pagefind-ui.js",
