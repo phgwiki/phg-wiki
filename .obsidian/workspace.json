@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "src/intro2.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
@@ -173,8 +173,8 @@
   "lastOpenFiles": [
     "src/intro1.md",
     "src/intro2.md",
-    "src/v1ch6.md",
     "src/v1ch1.md",
+    "src/v1ch6.md",
     "src/v2ch8.md",
     "src/v2ch7.md",
     "src/v2ch6.md",
