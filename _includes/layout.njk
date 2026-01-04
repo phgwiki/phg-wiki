@@ -27,7 +27,7 @@
       <nav class="chapters-horizontal">
         <ul>
           <li class="menu-group">
-            <span>Введения</span>
+            <span><a href="/intro1">Введения</a></span>
             <ul class="submenu">
               <li><a href="/intro1">К изданию 1994 г.</a></li>
               <li><a href="/intro2">К изданию 1951 г.</a></li>
@@ -35,7 +35,7 @@
           </li>
 
           <li class="menu-group">
-            <span>Том 1</span>
+            <span><a href="/v2ch1/">Том 1</a></span>
             <ul class="submenu">
               {% if collections.chaptersByVolume and collections.chaptersByVolume[1] %}
                 {% for ch in collections.chaptersByVolume[1] %}
@@ -48,7 +48,7 @@
           </li>
 
           <li class="menu-group">
-            <span>Том 2</span>
+            <span><a href="/v2ch1/">Том 2</a></span>
             <ul class="submenu">
               {% if collections.chaptersByVolume and collections.chaptersByVolume[2] %}
                 {% for ch in collections.chaptersByVolume[2] %}

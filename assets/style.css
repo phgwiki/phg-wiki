@@ -828,6 +828,7 @@ text-decoration: none;
   }
   .chapters-horizontal {
   background: #000;
+    line-height: 10px;
 }
     .chapters-horizontal > ul {
     display: flex;
