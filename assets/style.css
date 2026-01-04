@@ -835,7 +835,7 @@ text-decoration: none;
     gap: 10px;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 6px;
+    padding: 3px, 0, 3px;
   }
 
   .chapters-horizontal > ul > li {
