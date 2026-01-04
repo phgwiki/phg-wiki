@@ -5,9 +5,10 @@ order: 6
 volume: 2
 type: chapter
 ---
-# Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth
-## Часть 2: Реальность, человеческая природа и общество/ Part 2: Reality, Human Nature, and Society
-### Глава III «Mind», «тело» и «внешний мир»/ Chapter III “Mind,” “Body,” and “External World”
+[Том II Мобилизация Селф/ Volume II The Self Mobilization](/v2ch1)
+
+==Часть 2: Манипуляция Селф==
+
  <div class="parallel-block">
 	 <div class="parallel-controls"><button class="parallel-toggle" data-parallel-toggle>Скрыть оригинал ×</button>
 	 </div>

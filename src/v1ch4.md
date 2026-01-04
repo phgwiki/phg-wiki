@@ -7,7 +7,7 @@ type: chapter
 ---
 [Том I Новизна, возбуждение и рост/ Volume I Novelty, Excitement and Growth](/v1ch1)
 
-[Часть 1 Введение /  Part 1 Introduction](/v1ch1)
+==Часть 1 Введение /  Part 1 Introduction==
 
  <div class="parallel-block">
 	 <div class="parallel-controls"><button class="parallel-toggle" data-parallel-toggle>Скрыть оригинал ×</button>
