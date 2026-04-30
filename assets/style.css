@@ -723,7 +723,7 @@ text-decoration: none;
 
 /* РУ: книжный абзац */
 .parallel-columns .col-ru {
-  width: 54%;
+  width: 55%;
   min-width: 0;
   padding: 0 10px 0 0;
 }
@@ -739,7 +739,7 @@ text-decoration: none;
 
 /* EN */
 .parallel-columns .col-en {
-  width: 46%;
+  width: 45%;
   min-width: 0;
   
 }
